@@ -1,0 +1,25 @@
+# Estimands in Layman's Terms {.unnumbered}
+
+> **Summary:** One or two sentences summarizing what this chapter covers.
+
+## Objectives
+
+-   insert 3–5 clear learning goals for the reader
+
+## Key Concepts
+
+insert
+
+# Introduction
+
+insert
+
+## Header 2 as needed
+
+test
+
+### Header 3 as needed
+
+## Summary
+
+# References

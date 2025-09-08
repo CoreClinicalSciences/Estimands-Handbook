@@ -1,0 +1,3 @@
+# Purpose of This Handbook {.unnumbered}
+
+The **Estimands Handbook** is a living, evolving resource designed to help researchers, statisticians, clinicians, and decision-makers understand and apply the concept of estimands in both clinical trials, evidence synthesis, and other research studies. 
