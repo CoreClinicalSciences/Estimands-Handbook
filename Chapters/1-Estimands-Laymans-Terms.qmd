@@ -1,25 +1,27 @@
-# Estimands in Layman's Terms {.unnumbered}
+# Introduction to Estimands {.unnumbered}
 
 > **Summary:** One or two sentences summarizing what this chapter covers.
 
-## Objectives
+## What Are Estimands and Why Do They Matter?
 
 -   insert 3–5 clear learning goals for the reader
 
-## Key Concepts
+## Historical Context: From Intention-to-Treat to Estimands
 
 insert
 
-# Introduction
+## The ICH E9(R1) Addendum: Key Innovations
 
 insert
 
-## Header 2 as needed
+## Current Landscape of Clinical Studies
+
+insert
+
+## Structure and Navigation of This Handbook
 
 test
 
-### Header 3 as needed
-
-## Summary
+## Learning Objectives and Target Audience
 
 # References

@@ -3,7 +3,7 @@ project:
   output-dir: Output
 
 book:
-  title: "A Living Handbook on EstimandsOu"
+  title: "A Living Handbook on Estimands"
   author: "Core Clinical Sciences"
   # logo: X
   # repo-url: X
@@ -12,9 +12,20 @@ book:
   
   chapters:
       - index.qmd
-      - part: Intro to Estimands
+      - part: Foundations
         chapters: 
             - Chapters/1-Estimands-Laymans-Terms.qmd
+      
+      - part: Core Framework
+        chapters: 
+            - Chapters/2-Core-Framework.qmd 
+
+      - part: Statistical Methods and Analysis
+        chapters: 
+            - Chapters/3-Estimands-and-Causal-Inference.qmd
+            - Chapters/4-Time-to-Event-Analysis-and-Estimands.qmd
+            
+            
 
       # - part: Appendices
       #   chapters: 
