@@ -1,0 +1,20 @@
+---
+title: "The Attributes of Estimands "
+bibliography: chap2.bib
+---
+
+> **Summary:** One or two sentences summarizing what this chapter covers. 
+
+## Authors: 
+
+
+## Date of Last Update
+
+
+## Key Points of This Chapter 
+
+Testing @morris2019using. 
+
+##
+
+# References 

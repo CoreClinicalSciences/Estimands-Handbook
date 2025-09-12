@@ -1,5 +1,7 @@
-# Causal Framework for Clinical Trials {.unnumbered}
-
+---
+title: "Estimands and Causal Inference"
+bibliography: chap3.bib
+---
 > **Summary:** One or two sentences summarizing what this chapter covers.
 
 ##

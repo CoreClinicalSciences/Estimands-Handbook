@@ -1,4 +1,7 @@
-# Introduction to Estimands {.unnumbered}
+---
+title: "Introduction to Estimands"
+bibliography: chap1.bib
+---
 
 ## Authors: 
 
@@ -10,7 +13,7 @@ Sept 11th, 2025 (version 0.1)
 
 ## Key Points of This Chapter 
 
-In this chapter, we introduce the term "*estimands*" and the *estimands framework* as outlined in the @ICH_E9R1_2019. We provide a list of key introductory references on estimands with our summary intended to facilitate an easy introduction to estimands. 
+In this chapter, we introduce the term "*estimands*" and the *estimands framework* as outlined in the ICH E9(R1) addendum @ICH_E9R1_2019. We provide a list of key introductory references on estimands with our summary intended to facilitate an easy introduction to estimands. 
 
 The key points of this chapter are: 
 
@@ -26,7 +29,4 @@ The key points of this chapter are:
 
 ## Historical Context: From Intention-to-Treat to Estimands
 
-# References {.sectionbibliography}
-
-::: {.sectionrefs}
-:::
+# References 
