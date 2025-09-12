@@ -1,24 +1,36 @@
 # Chapter Title {.unnumbered}
 
-> **Summary:** One or two sentences summarizing what this chapter covers.
+## Authors: 
 
-## Objectives
+<!-- Insert author names -->
 
-- insert 3–5 clear learning goals for the reader  
+## Date of Last Update
 
-## Key Concepts
+Sept 11th, 2025 (version 0.1)
 
----
+# Key Points of This Chapter
 
-# Introduction
+In this chapter, we (insert a statement of what this chapter is trying to achieve)
+
+Key points of this chapter are: 
+
+1. Key point 1
+
+1. Key point 2
+
+1. Key point 3 (remove as needed - should have 3-5 key points)
+
+1. Key point 4 (remove as needed - should have 3-5 key points)
+
+1. Key point 5 (remove as needed - should have 3-5 key points)
+
+# Insert Main Topic of the Chapter
 
 ## Header 2 as needed
 
 ### Header 3 as needed
 
-## Summary
-
----
+# Conclusion 
 
 # References
 

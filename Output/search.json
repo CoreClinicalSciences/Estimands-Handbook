@@ -9,36 +9,188 @@
   {
     "objectID": "Chapters/1-Estimands-Laymans-Terms.html",
     "href": "Chapters/1-Estimands-Laymans-Terms.html",
-    "title": "Estimands in Layman’s Terms",
+    "title": "Introduction to Estimands",
     "section": "",
-    "text": "Introduction"
+    "text": "What Are Estimands and Why Do They Matter?",
+    "crumbs": [
+      "Foundations",
+      "Introduction to Estimands"
+    ]
   },
   {
     "objectID": "Chapters/1-Estimands-Laymans-Terms.html#objectives",
     "href": "Chapters/1-Estimands-Laymans-Terms.html#objectives",
     "title": "Estimands in Layman’s Terms",
-    "section": "Objectives",
-    "text": "Objectives\n\ninsert 3–5 clear learning goals for the reader"
+    "section": "",
+    "text": "insert 3–5 clear learning goals for the reader",
+    "crumbs": [
+      "Intro to Estimands",
+      "Estimands in Layman's Terms"
+    ]
   },
   {
     "objectID": "Chapters/1-Estimands-Laymans-Terms.html#key-concepts",
     "href": "Chapters/1-Estimands-Laymans-Terms.html#key-concepts",
     "title": "Estimands in Layman’s Terms",
     "section": "Key Concepts",
-    "text": "Key Concepts"
+    "text": "Key Concepts\ninsert",
+    "crumbs": [
+      "Intro to Estimands",
+      "Estimands in Layman's Terms"
+    ]
   },
   {
     "objectID": "Chapters/1-Estimands-Laymans-Terms.html#header-2-as-needed",
     "href": "Chapters/1-Estimands-Laymans-Terms.html#header-2-as-needed",
     "title": "Estimands in Layman’s Terms",
     "section": "Header 2 as needed",
-    "text": "Header 2 as needed\n\nHeader 3 as needed"
+    "text": "Header 2 as needed\ntest\n\nHeader 3 as needed",
+    "crumbs": [
+      "Intro to Estimands",
+      "Estimands in Layman's Terms"
+    ]
   },
   {
     "objectID": "Chapters/1-Estimands-Laymans-Terms.html#summary",
     "href": "Chapters/1-Estimands-Laymans-Terms.html#summary",
     "title": "Estimands in Layman’s Terms",
     "section": "Summary",
-    "text": "Summary"
+    "text": "Summary",
+    "crumbs": [
+      "Intro to Estimands",
+      "Estimands in Layman's Terms"
+    ]
+  },
+  {
+    "objectID": "Chapters/1-Estimands-Laymans-Terms.html#what-are-estimands-and-why-do-they-matter",
+    "href": "Chapters/1-Estimands-Laymans-Terms.html#what-are-estimands-and-why-do-they-matter",
+    "title": "Introduction to Estimands",
+    "section": "",
+    "text": "insert 3–5 clear learning goals for the reader",
+    "crumbs": [
+      "Foundations",
+      "Introduction to Estimands"
+    ]
+  },
+  {
+    "objectID": "Chapters/1-Estimands-Laymans-Terms.html#historical-context-from-intention-to-treat-to-estimands",
+    "href": "Chapters/1-Estimands-Laymans-Terms.html#historical-context-from-intention-to-treat-to-estimands",
+    "title": "Introduction to Estimands",
+    "section": "Historical Context: From Intention-to-Treat to Estimands",
+    "text": "Historical Context: From Intention-to-Treat to Estimands\ninsert",
+    "crumbs": [
+      "Foundations",
+      "Introduction to Estimands"
+    ]
+  },
+  {
+    "objectID": "Chapters/1-Estimands-Laymans-Terms.html#the-ich-e9r1-addendum-key-innovations",
+    "href": "Chapters/1-Estimands-Laymans-Terms.html#the-ich-e9r1-addendum-key-innovations",
+    "title": "Introduction to Estimands",
+    "section": "The ICH E9(R1) Addendum: Key Innovations",
+    "text": "The ICH E9(R1) Addendum: Key Innovations\ninsert",
+    "crumbs": [
+      "Foundations",
+      "Introduction to Estimands"
+    ]
+  },
+  {
+    "objectID": "Chapters/1-Estimands-Laymans-Terms.html#structure-and-navigation-of-this-handbook",
+    "href": "Chapters/1-Estimands-Laymans-Terms.html#structure-and-navigation-of-this-handbook",
+    "title": "Introduction to Estimands",
+    "section": "Structure and Navigation of This Handbook",
+    "text": "Structure and Navigation of This Handbook\ntest",
+    "crumbs": [
+      "Foundations",
+      "Introduction to Estimands"
+    ]
+  },
+  {
+    "objectID": "Chapters/1-Estimands-Laymans-Terms.html#learning-objectives-and-target-audience",
+    "href": "Chapters/1-Estimands-Laymans-Terms.html#learning-objectives-and-target-audience",
+    "title": "Introduction to Estimands",
+    "section": "Learning Objectives and Target Audience",
+    "text": "Learning Objectives and Target Audience",
+    "crumbs": [
+      "Foundations",
+      "Introduction to Estimands"
+    ]
+  },
+  {
+    "objectID": "Chapters/1-Estimands-Laymans-Terms.html#current-landscape-of-clinical-studies",
+    "href": "Chapters/1-Estimands-Laymans-Terms.html#current-landscape-of-clinical-studies",
+    "title": "Introduction to Estimands",
+    "section": "Current Landscape of Clinical Studies",
+    "text": "Current Landscape of Clinical Studies\ninsert",
+    "crumbs": [
+      "Foundations",
+      "Introduction to Estimands"
+    ]
+  },
+  {
+    "objectID": "Chapters/2-Core-Framework.html",
+    "href": "Chapters/2-Core-Framework.html",
+    "title": "1  The Attributes of Estimands",
+    "section": "",
+    "text": "1.1",
+    "crumbs": [
+      "Core Framework",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>The Attributes of Estimands</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/2-Core-Framework.html#section-1",
+    "href": "Chapters/2-Core-Framework.html#section-1",
+    "title": "1  The Attributes of Estimands",
+    "section": "1.2 ",
+    "text": "1.2",
+    "crumbs": [
+      "Core Framework",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>The Attributes of Estimands</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/3-Estimands-And-Causal-Inference.html",
+    "href": "Chapters/3-Estimands-And-Causal-Inference.html",
+    "title": "2  Causal Framework for Clinical Trials",
+    "section": "",
+    "text": "2.1",
+    "crumbs": [
+      "Statistical Methods and Analysis",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Causal Framework for Clinical Trials</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/3-Estimands-And-Causal-Inference.html#section-1",
+    "href": "Chapters/3-Estimands-And-Causal-Inference.html#section-1",
+    "title": "2  Causal Framework for Clinical Trials",
+    "section": "2.2 ",
+    "text": "2.2",
+    "crumbs": [
+      "Statistical Methods and Analysis",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Causal Framework for Clinical Trials</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/4-Time-to-Event-Analysis-and-Estimands.html",
+    "href": "Chapters/4-Time-to-Event-Analysis-and-Estimands.html",
+    "title": "3  Time-to-Event Analysis and Estimands",
+    "section": "",
+    "text": "3.1",
+    "crumbs": [
+      "Statistical Methods and Analysis",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Time-to-Event Analysis and Estimands</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/4-Time-to-Event-Analysis-and-Estimands.html#section-1",
+    "href": "Chapters/4-Time-to-Event-Analysis-and-Estimands.html#section-1",
+    "title": "3  Time-to-Event Analysis and Estimands",
+    "section": "3.2 ",
+    "text": "3.2",
+    "crumbs": [
+      "Statistical Methods and Analysis",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Time-to-Event Analysis and Estimands</span>"
+    ]
   }
 ]

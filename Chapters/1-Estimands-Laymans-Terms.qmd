@@ -1,25 +1,30 @@
-# Estimands in Layman's Terms {.unnumbered}
+# Introduction to Estimands {.unnumbered}
 
-> **Summary:** One or two sentences summarizing what this chapter covers.
+## Authors: 
 
-## Objectives
+Jay JH Park, Shomoita Alam 
 
--   insert 3–5 clear learning goals for the reader
+## Date of Last Update
 
-## Key Concepts
+Sept 11th, 2025 (version 0.1)
 
-insert
+# Key Points of This Chapter 
 
-# Introduction
+In this chapter, we introduce the term "*estimands*" and the *estimands framework* as outlined in the ICH E9(R1) addendum. We provide a list of key introductory references on estimands with our summary intended to facilitate an easy introduction to estimands. 
 
-insert
+The key points of this chapter are: 
 
-## Header 2 as needed
+1. Estimands are ...
 
-test
+2. The estimands framework offers a structured way to plan and operationalize our research questions in a clear way. 
 
-### Header 3 as needed
+# What is an Estimand>?
 
-## Summary
+## Why Do Estimands Matter?
+
+# The ICH E9(R1) Addendum
+
+## Historical Context: From Intention-to-Treat to Estimands
+
 
 # References

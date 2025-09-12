@@ -1,3 +1,15 @@
-# Purpose of This Handbook {.unnumbered}
+# Why Are We Writing This Book {.unnumbered}
 
 The **Estimands Handbook** is a living, evolving resource designed to help researchers, statisticians, clinicians, and decision-makers understand and apply the concept of estimands in both clinical trials, evidence synthesis, and other research studies. 
+
+We decided to write this book to improve our understanding of the estimands framework as outlined in the [ICH E9(R1) addendum](https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf). As more work is disseminated in this area, we aim to update the book over time to stay up-to-date in our understanding of their relevance and implications to health research. 
+
+We also hope to assist researchers and consumers of health research, who want to learn more about estimands, with this resource. Some chapters will be intended for those with minimal background to statistics and health research. As needed, in other chapters, we will provide more technical overview and description of estimands. 
+
+## Structure and Navigation of This Handbook
+
+Each chapter will be written to be as self-contained as possible. Each chapter will contain introductory summaries with the chapter's intended learning objectives with 3-5 key summaries. 
+
+## Contribution and Feedback
+
+Feedback (hopefully constructive) and contributions are welcome. 
