@@ -12,78 +12,78 @@
   {
     "objectID": "Chapters/1-Estimands-Laymans-Terms.html",
     "href": "Chapters/1-Estimands-Laymans-Terms.html",
-    "title": "Introduction to Estimands",
+    "title": "1  Introduction to Estimands",
     "section": "",
-    "text": "Authors:\nJay JH Park, Shomoita Alam",
+    "text": "1.1 Authors:\nJay JH Park, Shomoita Alam",
     "crumbs": [
       "Foundations",
-      "Introduction to Estimands"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
     ]
   },
   {
     "objectID": "Chapters/1-Estimands-Laymans-Terms.html#date-of-last-update",
     "href": "Chapters/1-Estimands-Laymans-Terms.html#date-of-last-update",
-    "title": "Introduction to Estimands",
-    "section": "Date of Last Update",
-    "text": "Date of Last Update\nSept 11th, 2025 (version 0.1)",
+    "title": "1  Introduction to Estimands",
+    "section": "1.2 Date of Last Update",
+    "text": "1.2 Date of Last Update\nSept 11th, 2025 (version 0.1)",
     "crumbs": [
       "Foundations",
-      "Introduction to Estimands"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
     ]
   },
   {
     "objectID": "Chapters/1-Estimands-Laymans-Terms.html#key-points-of-this-chapter",
     "href": "Chapters/1-Estimands-Laymans-Terms.html#key-points-of-this-chapter",
-    "title": "Introduction to Estimands",
-    "section": "Key Points of This Chapter",
-    "text": "Key Points of This Chapter\nIn this chapter, we introduce the term “estimands” and the estimands framework as outlined in the “ICH E9(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials” (2019). We provide a list of key introductory references on estimands with our summary intended to facilitate an easy introduction to estimands.\nThe key points of this chapter are:\n\nEstimands are …\nThe estimands framework offers a structured way to plan and operationalize our research questions in a clear way.",
+    "title": "1  Introduction to Estimands",
+    "section": "1.3 Key Points of This Chapter",
+    "text": "1.3 Key Points of This Chapter\nIn this chapter, we introduce the term “estimands” and the estimands framework as outlined in the “ICH E9(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials” (2019). We provide a list of key introductory references on estimands with our summary intended to facilitate an easy introduction to estimands.\nThe key points of this chapter are:\n\nEstimands are …\nThe estimands framework offers a structured way to plan and operationalize our research questions in a clear way.",
     "crumbs": [
       "Foundations",
-      "Introduction to Estimands"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
     ]
   },
   {
     "objectID": "Chapters/1-Estimands-Laymans-Terms.html#what-is-an-estimand",
     "href": "Chapters/1-Estimands-Laymans-Terms.html#what-is-an-estimand",
-    "title": "Introduction to Estimands",
-    "section": "What is an Estimand?",
-    "text": "What is an Estimand?",
+    "title": "1  Introduction to Estimands",
+    "section": "1.4 What is an Estimand?",
+    "text": "1.4 What is an Estimand?",
     "crumbs": [
       "Foundations",
-      "Introduction to Estimands"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
     ]
   },
   {
     "objectID": "Chapters/1-Estimands-Laymans-Terms.html#why-do-estimands-matter",
     "href": "Chapters/1-Estimands-Laymans-Terms.html#why-do-estimands-matter",
-    "title": "Introduction to Estimands",
-    "section": "Why Do Estimands Matter?",
-    "text": "Why Do Estimands Matter?",
+    "title": "1  Introduction to Estimands",
+    "section": "1.5 Why Do Estimands Matter?",
+    "text": "1.5 Why Do Estimands Matter?",
     "crumbs": [
       "Foundations",
-      "Introduction to Estimands"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
     ]
   },
   {
     "objectID": "Chapters/1-Estimands-Laymans-Terms.html#the-ich-e9r1-addendum",
     "href": "Chapters/1-Estimands-Laymans-Terms.html#the-ich-e9r1-addendum",
-    "title": "Introduction to Estimands",
-    "section": "The ICH E9(R1) Addendum",
-    "text": "The ICH E9(R1) Addendum",
+    "title": "1  Introduction to Estimands",
+    "section": "1.6 The ICH E9(R1) Addendum",
+    "text": "1.6 The ICH E9(R1) Addendum",
     "crumbs": [
       "Foundations",
-      "Introduction to Estimands"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
     ]
   },
   {
     "objectID": "Chapters/1-Estimands-Laymans-Terms.html#historical-context-from-intention-to-treat-to-estimands",
     "href": "Chapters/1-Estimands-Laymans-Terms.html#historical-context-from-intention-to-treat-to-estimands",
-    "title": "Introduction to Estimands",
-    "section": "Historical Context: From Intention-to-Treat to Estimands",
-    "text": "Historical Context: From Intention-to-Treat to Estimands",
+    "title": "1  Introduction to Estimands",
+    "section": "1.7 Historical Context: From Intention-to-Treat to Estimands",
+    "text": "1.7 Historical Context: From Intention-to-Treat to Estimands",
     "crumbs": [
       "Foundations",
-      "Introduction to Estimands"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
     ]
   },
   {
@@ -95,6 +95,156 @@
     "crumbs": [
       "Core Framework",
       "The Attributes of Estimands"
+    ]
+  },
+  {
+    "objectID": "Chapters/Estimands-Laymans-Terms.html",
+    "href": "Chapters/Estimands-Laymans-Terms.html",
+    "title": "1  Introduction to Estimands",
+    "section": "",
+    "text": "1.1 Authors:\nJay JH Park, Shomoita Alam",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/Estimands-Laymans-Terms.html#date-of-last-update",
+    "href": "Chapters/Estimands-Laymans-Terms.html#date-of-last-update",
+    "title": "1  Introduction to Estimands",
+    "section": "1.2 Date of Last Update",
+    "text": "1.2 Date of Last Update\nSept 11th, 2025 (version 0.1)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/Estimands-Laymans-Terms.html#key-points-of-this-chapter",
+    "href": "Chapters/Estimands-Laymans-Terms.html#key-points-of-this-chapter",
+    "title": "1  Introduction to Estimands",
+    "section": "1.3 Key Points of This Chapter",
+    "text": "1.3 Key Points of This Chapter\nIn this chapter, we introduce the term “estimands” and the estimands framework as outlined in the ICH E9(R1) addendum1. We provide a list of key introductory references on estimands with our summary intended to facilitate an easy introduction to estimands.\nThe key points of this chapter are:\n\nEstimands are …\nThe estimands framework offers a structured way to plan and operationalize our research questions in a clear way.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/Estimands-Laymans-Terms.html#what-is-an-estimand",
+    "href": "Chapters/Estimands-Laymans-Terms.html#what-is-an-estimand",
+    "title": "1  Introduction to Estimands",
+    "section": "1.4 What is an Estimand?",
+    "text": "1.4 What is an Estimand?",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/Estimands-Laymans-Terms.html#why-do-estimands-matter",
+    "href": "Chapters/Estimands-Laymans-Terms.html#why-do-estimands-matter",
+    "title": "1  Introduction to Estimands",
+    "section": "1.5 Why Do Estimands Matter?",
+    "text": "1.5 Why Do Estimands Matter?",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/Estimands-Laymans-Terms.html#the-ich-e9r1-addendum",
+    "href": "Chapters/Estimands-Laymans-Terms.html#the-ich-e9r1-addendum",
+    "title": "1  Introduction to Estimands",
+    "section": "1.6 The ICH E9(R1) Addendum",
+    "text": "1.6 The ICH E9(R1) Addendum",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/Estimands-Laymans-Terms.html#historical-context-from-intention-to-treat-to-estimands",
+    "href": "Chapters/Estimands-Laymans-Terms.html#historical-context-from-intention-to-treat-to-estimands",
+    "title": "1  Introduction to Estimands",
+    "section": "1.7 Historical Context: From Intention-to-Treat to Estimands",
+    "text": "1.7 Historical Context: From Intention-to-Treat to Estimands",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/Core-Framework.html",
+    "href": "Chapters/Core-Framework.html",
+    "title": "2  The Attributes of Estimands",
+    "section": "",
+    "text": "2.1 Authors:",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Attributes of Estimands</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/Core-Framework.html#date-of-last-update",
+    "href": "Chapters/Core-Framework.html#date-of-last-update",
+    "title": "2  The Attributes of Estimands",
+    "section": "2.2 Date of Last Update",
+    "text": "2.2 Date of Last Update",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Attributes of Estimands</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/Core-Framework.html#key-points-of-this-chapter",
+    "href": "Chapters/Core-Framework.html#key-points-of-this-chapter",
+    "title": "2  The Attributes of Estimands",
+    "section": "2.3 Key Points of This Chapter",
+    "text": "2.3 Key Points of This Chapter\nTesting1.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Attributes of Estimands</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/Core-Framework.html#section",
+    "href": "Chapters/Core-Framework.html#section",
+    "title": "2  The Attributes of Estimands",
+    "section": "2.4 ",
+    "text": "2.4",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Attributes of Estimands</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/Estimands-and-Causal-Inference.html",
+    "href": "Chapters/Estimands-and-Causal-Inference.html",
+    "title": "3  Estimands and Causal Inference",
+    "section": "",
+    "text": "3.1",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Estimands and Causal Inference</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/Estimands-and-Causal-Inference.html#section-1",
+    "href": "Chapters/Estimands-and-Causal-Inference.html#section-1",
+    "title": "3  Estimands and Causal Inference",
+    "section": "3.2 ",
+    "text": "3.2",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Estimands and Causal Inference</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/Time-to-Event-Analysis-and-Estimands.html",
+    "href": "Chapters/Time-to-Event-Analysis-and-Estimands.html",
+    "title": "4  Time-to-Event Analysis and Estimands",
+    "section": "",
+    "text": "4.1",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Time-to-Event Analysis and Estimands</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/Time-to-Event-Analysis-and-Estimands.html#section-1",
+    "href": "Chapters/Time-to-Event-Analysis-and-Estimands.html#section-1",
+    "title": "4  Time-to-Event Analysis and Estimands",
+    "section": "4.2 ",
+    "text": "4.2",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Time-to-Event Analysis and Estimands</span>"
     ]
   }
 ]

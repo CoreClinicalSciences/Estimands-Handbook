@@ -2,44 +2,27 @@ project:
   type: book
   output-dir: Output
 
+csl: nature.csl
+link-citations: true
+
 book:
   title: "A Living Handbook on Estimands"
   author: "Core Clinical Sciences"
-  # logo: X
-  # repo-url: X
-  # repo-branch: main
-  # repo-actions: [issue]
-  
   chapters:
-      - index.qmd
-      - part: Foundations
-        chapters: 
-            - Chapters/1-Estimands-Laymans-Terms.qmd
-      
-      - part: Core Framework
-        chapters: 
-            - Chapters/2-Core-Framework.qmd 
+    - index.qmd
+    
+    - part: Foundations
+    - Chapters/Estimands-Laymans-Terms.qmd
+    
+    - part: Core Framework
+    - Chapters/Core-Framework.qmd
+    
+    - part: Statistical Methods and Analysis
+    - Chapters/Estimands-and-Causal-Inference.qmd
+    - Chapters/Time-to-Event-Analysis-and-Estimands.qmd
 
-      - part: Statistical Methods and Analysis
-        chapters: 
-            - Chapters/3-Estimands-and-Causal-Inference.qmd
-            - Chapters/4-Time-to-Event-Analysis-and-Estimands.qmd
-            
-            
 
-      # - part: Appendices
-      #   chapters: 
-      #       - Chapters/Appendix-1-Codes.qmd
-
-bibliography: references.bib
-link-citations: true
-citeproc: true
-filters:
-  - quarto
-  - "_extensions/pandoc-ext/section-bibliographies/section-bibliographies.lua"
-
-number-depth: 3 
-
+number-depth: 3
 format:
   html:
     theme: cosmo
