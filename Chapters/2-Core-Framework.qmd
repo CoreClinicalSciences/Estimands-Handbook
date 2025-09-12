@@ -1,9 +1,13 @@
 # The Attributes of Estimands {.unnumbered}
 
-> **Summary:** One or two sentences summarizing what this chapter covers.
+> **Summary:** One or two sentences summarizing what this chapter covers. 
+
 
 ##
 
 ##
 
-# References
+## References {.sectionbibliography}
+
+::: {.sectionrefs}
+:::

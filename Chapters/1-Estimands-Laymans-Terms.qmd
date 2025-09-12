@@ -1,27 +1,33 @@
 # Introduction to Estimands {.unnumbered}
 
-> **Summary:** One or two sentences summarizing what this chapter covers.
+## Authors: 
 
-## What Are Estimands and Why Do They Matter?
+Jay JH Park, Shomoita Alam 
 
--   insert 3–5 clear learning goals for the reader
+## Date of Last Update
+
+Sept 11th, 2025 (version 0.1)
+
+# Key Points of This Chapter 
+
+In this chapter, we introduce the term "*estimands*" and the *estimands framework* as outlined in the ICH E9(R1) addendum. We provide a list of key introductory references on estimands with our summary intended to facilitate an easy introduction to estimands. 
+
+The key points of this chapter are: 
+
+1. Estimands are ...
+
+2. The estimands framework offers a structured way to plan and operationalize our research questions in a clear way. 
+
+# What is an Estimand?
+
+## Why Do Estimands Matter?
+
+# The ICH E9(R1) Addendum
 
 ## Historical Context: From Intention-to-Treat to Estimands
 
-insert
 
-## The ICH E9(R1) Addendum: Key Innovations
+## References {.sectionbibliography}
 
-insert
-
-## Current Landscape of Clinical Studies
-
-insert
-
-## Structure and Navigation of This Handbook
-
-test
-
-## Learning Objectives and Target Audience
-
-# References
+::: {.sectionrefs}
+:::
