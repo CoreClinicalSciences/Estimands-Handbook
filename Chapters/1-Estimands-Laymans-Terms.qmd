@@ -26,9 +26,6 @@ The key points of this chapter are:
 
 ## Historical Context: From Intention-to-Treat to Estimands
 
-
-
-
 # References {.sectionbibliography}
 
 ::: {.sectionrefs}

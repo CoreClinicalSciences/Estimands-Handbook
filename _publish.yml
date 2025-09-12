@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 7c67c26f-9e47-4060-af28-104072915250
+      url: 'https://core-clinical-sciences.quarto.pub/a-living-handbook-on-estimands'
