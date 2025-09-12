@@ -31,7 +31,12 @@ book:
       #   chapters: 
       #       - Chapters/Appendix-1-Codes.qmd
 
-# bibliography: references.bib
+bibliography: references.bib
+link-citations: true
+citeproc: true
+filters:
+  - quarto
+  - "_extensions/pandoc-ext/section-bibliographies/section-bibliographies.lua"
 
 number-depth: 3 
 
