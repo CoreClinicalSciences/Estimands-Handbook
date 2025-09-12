@@ -32,6 +32,28 @@
     ]
   },
   {
+    "objectID": "Chapters/1-Estimands-Laymans-Terms.html#key-points-of-this-chapter",
+    "href": "Chapters/1-Estimands-Laymans-Terms.html#key-points-of-this-chapter",
+    "title": "Introduction to Estimands",
+    "section": "Key Points of This Chapter",
+    "text": "Key Points of This Chapter\nIn this chapter, we introduce the term “estimands” and the estimands framework as outlined in the “ICH E9(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials” (2019). We provide a list of key introductory references on estimands with our summary intended to facilitate an easy introduction to estimands.\nThe key points of this chapter are:\n\nEstimands are …\nThe estimands framework offers a structured way to plan and operationalize our research questions in a clear way.",
+    "crumbs": [
+      "Foundations",
+      "Introduction to Estimands"
+    ]
+  },
+  {
+    "objectID": "Chapters/1-Estimands-Laymans-Terms.html#what-is-an-estimand",
+    "href": "Chapters/1-Estimands-Laymans-Terms.html#what-is-an-estimand",
+    "title": "Introduction to Estimands",
+    "section": "What is an Estimand?",
+    "text": "What is an Estimand?",
+    "crumbs": [
+      "Foundations",
+      "Introduction to Estimands"
+    ]
+  },
+  {
     "objectID": "Chapters/1-Estimands-Laymans-Terms.html#why-do-estimands-matter",
     "href": "Chapters/1-Estimands-Laymans-Terms.html#why-do-estimands-matter",
     "title": "Introduction to Estimands",
@@ -43,22 +65,22 @@
     ]
   },
   {
-    "objectID": "Chapters/1-Estimands-Laymans-Terms.html#historical-context-from-intention-to-treat-to-estimands",
-    "href": "Chapters/1-Estimands-Laymans-Terms.html#historical-context-from-intention-to-treat-to-estimands",
+    "objectID": "Chapters/1-Estimands-Laymans-Terms.html#the-ich-e9r1-addendum",
+    "href": "Chapters/1-Estimands-Laymans-Terms.html#the-ich-e9r1-addendum",
     "title": "Introduction to Estimands",
-    "section": "Historical Context: From Intention-to-Treat to Estimands",
-    "text": "Historical Context: From Intention-to-Treat to Estimands",
+    "section": "The ICH E9(R1) Addendum",
+    "text": "The ICH E9(R1) Addendum",
     "crumbs": [
       "Foundations",
       "Introduction to Estimands"
     ]
   },
   {
-    "objectID": "Chapters/1-Estimands-Laymans-Terms.html#references",
-    "href": "Chapters/1-Estimands-Laymans-Terms.html#references",
+    "objectID": "Chapters/1-Estimands-Laymans-Terms.html#historical-context-from-intention-to-treat-to-estimands",
+    "href": "Chapters/1-Estimands-Laymans-Terms.html#historical-context-from-intention-to-treat-to-estimands",
     "title": "Introduction to Estimands",
-    "section": "References",
-    "text": "References",
+    "section": "Historical Context: From Intention-to-Treat to Estimands",
+    "text": "Historical Context: From Intention-to-Treat to Estimands",
     "crumbs": [
       "Foundations",
       "Introduction to Estimands"

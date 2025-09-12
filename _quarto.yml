@@ -32,7 +32,6 @@ book:
       #       - Chapters/Appendix-1-Codes.qmd
 
 bibliography: references.bib
-reference-section-title: References
 link-citations: true
 citeproc: true
 filters:
