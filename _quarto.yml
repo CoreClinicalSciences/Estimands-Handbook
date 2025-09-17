@@ -8,6 +8,8 @@ link-citations: true
 book:
   title: "A Living Handbook on Estimands"
   author: "Core Clinical Sciences"
+  repo-url: "https://github.com/CoreClinicalSciences/Estimands-Handbook"
+  repo-actions: [issue]
   chapters:
     - index.qmd
     

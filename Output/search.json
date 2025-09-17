@@ -4,9 +4,9 @@
     "href": "index.html",
     "title": "A Living Handbook on Estimands",
     "section": "",
-    "text": "Purpose of This Handbook\nThe Estimands Handbook is a living, evolving resource designed to help researchers, statisticians, clinicians, and decision-makers understand and apply the concept of estimands in both clinical trials, evidence synthesis, and other research studies.",
+    "text": "Why Are We Writing This Book\nThe Estimands Handbook is a living, evolving resource designed to help researchers, statisticians, clinicians, and decision-makers understand and apply the concept of estimands in both clinical trials, evidence synthesis, and other research studies.\nWe decided to write this book to improve our understanding of the estimands framework as outlined in the ICH E9(R1) addendum. As more work is disseminated in this area, we aim to update the book over time to stay up-to-date in our understanding of their relevance and implications to health research.\nWe also hope to assist researchers and consumers of health research, who want to learn more about estimands, with this resource. Some chapters will be intended for those with minimal background to statistics and health research. As needed, in other chapters, we will provide more technical overview and description of estimands.",
     "crumbs": [
-      "Purpose of This Handbook"
+      "Why Are We Writing This Book"
     ]
   },
   {
@@ -245,6 +245,26 @@
     "text": "4.2",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Time-to-Event Analysis and Estimands</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#structure-and-navigation-of-this-handbook",
+    "href": "index.html#structure-and-navigation-of-this-handbook",
+    "title": "A Living Handbook on Estimands",
+    "section": "Structure and Navigation of This Handbook",
+    "text": "Structure and Navigation of This Handbook\nEach chapter will be written to be as self-contained as possible. Each chapter will contain introductory summaries with the chapter’s intended learning objectives with 3-5 key summaries.",
+    "crumbs": [
+      "Why Are We Writing This Book"
+    ]
+  },
+  {
+    "objectID": "index.html#contribution-and-feedback",
+    "href": "index.html#contribution-and-feedback",
+    "title": "A Living Handbook on Estimands",
+    "section": "Contribution and Feedback",
+    "text": "Contribution and Feedback\nFeedback (hopefully constructive) and contributions are welcome.",
+    "crumbs": [
+      "Why Are We Writing This Book"
     ]
   }
 ]
