@@ -4,9 +4,9 @@
     "href": "index.html",
     "title": "A Living Handbook on Estimands",
     "section": "",
-    "text": "Why Are We Writing This Book\nThe Estimands Handbook is a living, evolving resource designed to help researchers, statisticians, clinicians, and decision-makers understand and apply the concept of estimands in both clinical trials, evidence synthesis, and other research studies.\nWe decided to write this book to improve our understanding of the estimands framework as outlined in the ICH E9(R1) addendum. As more work is disseminated in this area, we aim to update the book over time to stay up-to-date in our understanding of their relevance and implications to health research.\nWe also hope to assist researchers and consumers of health research, who want to learn more about estimands, with this resource. Some chapters will be intended for those with minimal background to statistics and health research. As needed, in other chapters, we will provide more technical overview and description of estimands.",
+    "text": "Welcome\nThis is the website for “A Living Handbook on Estimands”. This book is intended to be a living resource designed to help the readers understand and apply the concept of estimands in clinical trials, evidence synthesis, and other quantitative research studies.\nWe hope to assist the researchers and consumers of health research who want to learn more about estimands. Some chapters will be intended for those with minimal background to statistics and health research. We will provide more technical discussion in other chapters, as needed.\nFrom a selfish point of view, we decided to write this book to improve our understanding of the estimands framework as outlined in the ICH E9(R1) addendum. As more work is disseminated in this area, we aim to update the book over time to stay up-to-date in our understanding of their relevance and implications to health research.",
     "crumbs": [
-      "Why Are We Writing This Book"
+      "Welcome"
     ]
   },
   {
@@ -16,7 +16,7 @@
     "section": "Structure and Navigation of This Handbook",
     "text": "Structure and Navigation of This Handbook\nEach chapter will be written to be as self-contained as possible. Each chapter will contain introductory summaries with the chapter’s intended learning objectives with 3-5 key summaries.",
     "crumbs": [
-      "Why Are We Writing This Book"
+      "Welcome"
     ]
   },
   {
@@ -26,7 +26,7 @@
     "section": "Contribution and Feedback",
     "text": "Contribution and Feedback\nFeedback (hopefully constructive) and contributions are welcome.",
     "crumbs": [
-      "Why Are We Writing This Book"
+      "Welcome"
     ]
   },
   {
@@ -44,7 +44,7 @@
     "href": "Chapters/Estimands-Laymans-Terms.html#date-of-last-update",
     "title": "1  Introduction to Estimands",
     "section": "1.2 Date of Last Update",
-    "text": "1.2 Date of Last Update\nSept 11th, 2025 (version 0.1)",
+    "text": "1.2 Date of Last Update\nSept 12th, 2025 (version 0.2)",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
     ]
@@ -54,27 +54,7 @@
     "href": "Chapters/Estimands-Laymans-Terms.html#key-points-of-this-chapter",
     "title": "1  Introduction to Estimands",
     "section": "1.3 Key Points of This Chapter",
-    "text": "1.3 Key Points of This Chapter\nIn this chapter, we introduce the term “estimands” and the estimands framework as outlined in the ICH E9(R1) addendum1. We provide a list of key introductory references on estimands with our summary intended to facilitate an easy introduction to estimands.\nThe key points of this chapter are:\n\nEstimands are …\nThe estimands framework offers a structured way to plan and operationalize our research questions in a clear way.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
-    ]
-  },
-  {
-    "objectID": "Chapters/Estimands-Laymans-Terms.html#what-is-an-estimand",
-    "href": "Chapters/Estimands-Laymans-Terms.html#what-is-an-estimand",
-    "title": "1  Introduction to Estimands",
-    "section": "1.4 What is an Estimand?",
-    "text": "1.4 What is an Estimand?",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
-    ]
-  },
-  {
-    "objectID": "Chapters/Estimands-Laymans-Terms.html#why-do-estimands-matter",
-    "href": "Chapters/Estimands-Laymans-Terms.html#why-do-estimands-matter",
-    "title": "1  Introduction to Estimands",
-    "section": "1.5 Why Do Estimands Matter?",
-    "text": "1.5 Why Do Estimands Matter?",
+    "text": "1.3 Key Points of This Chapter\nIn this chapter, we will introduce the concept of “estimands”, “estimators”, and “estimates” before introducing the “estimands framework” outlined in the ICH E9(R1) addendum. We will establish how the ICH E9(R1) estimands framework offers a structured way to plan and operationalize our research questions for clinical research\nTo guide further readings for the readers, we will also provide a list of of key introductory references on estimands framework to faciliate an easy introduction to estimands and estimands framework.\nThe key points of this chapter are:\n\nAn “estimand” refers to a target quantity we wish to estimate with our “estimator” (i.e., statistical analysis). The results of our statistical analysis are an “estimate” of the estimand.\nEstimands, estimators, and estimates have existed long before the ICH E9(R1) addendum. Even without the use of the ICH E9(R1) addendum, every statistical analysis (i.e., estimator) has a target estimand that it aims to estimate.\nThe ICH E9(R1) estimands framework offers a structured way to plan and operationalize our research questions.\nGiven that the ICH E9(R1) addendum is a regulatory document that has now veen adopted by many global regulatory agencies, the era of estimands framework has already begun (regardless of how one’s view).",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
     ]
@@ -83,8 +63,8 @@
     "objectID": "Chapters/Estimands-Laymans-Terms.html#the-ich-e9r1-addendum",
     "href": "Chapters/Estimands-Laymans-Terms.html#the-ich-e9r1-addendum",
     "title": "1  Introduction to Estimands",
-    "section": "1.6 The ICH E9(R1) Addendum",
-    "text": "1.6 The ICH E9(R1) Addendum",
+    "section": "2.1 The ICH E9(R1) Addendum",
+    "text": "2.1 The ICH E9(R1) Addendum\nThe estimands framework outlined in the ICH E9(R1) addendum aims to promote clear descriptions of treatment effects being targeted in clinical trials.@ICH_E9R1_2019 Having clarity in both the target and reported treatment effects (estimands and estimates) can facilitate more informed decisions to be made by different stakeholders. The addendum presents a structured way to plan and operationalize our research questions by defining five attributes that help define the estimands (treatment effects) of interest.\nThe attributes of estimands include: 1. Treatment condition\n\nPopulation\nEndpoint (or variable)\nIntercurrent events (or post-randomization events) and strategies for the specified intercurrent events\nPopulation-level summary\n\nAnother chapter will be dedicated to discuss these attributes in more detail.\nTreatment condition …",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
     ]
@@ -93,8 +73,18 @@
     "objectID": "Chapters/Estimands-Laymans-Terms.html#historical-context-from-intention-to-treat-to-estimands",
     "href": "Chapters/Estimands-Laymans-Terms.html#historical-context-from-intention-to-treat-to-estimands",
     "title": "1  Introduction to Estimands",
-    "section": "1.7 Historical Context: From Intention-to-Treat to Estimands",
-    "text": "1.7 Historical Context: From Intention-to-Treat to Estimands",
+    "section": "2.2 Historical Context: From Intention-to-Treat to Estimands",
+    "text": "2.2 Historical Context: From Intention-to-Treat to Estimands",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
+    ]
+  },
+  {
+    "objectID": "Chapters/Estimands-Laymans-Terms.html#footnotes",
+    "href": "Chapters/Estimands-Laymans-Terms.html#footnotes",
+    "title": "1  Introduction to Estimands",
+    "section": "",
+    "text": "International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use↩︎\nICH Harmonised Tripartite Guideline: Statistical Principles for Clinical Trials E9↩︎\nICH E(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials↩︎",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Estimands</span>"
     ]
