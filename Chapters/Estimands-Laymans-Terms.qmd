@@ -1,32 +1,71 @@
 ---
 title: "Introduction to Estimands"
-bibliography: chap1.bib
+bibliography: Estimands-Laymans-Terms.bib
 ---
 
-## Authors: 
+## Authors:
 
-Jay JH Park, Shomoita Alam 
+Jay JH Park, Shomoita Alam
 
 ## Date of Last Update
 
-Sept 11th, 2025 (version 0.1)
+Sept 12th, 2025 (version 0.2)
 
-## Key Points of This Chapter 
+## Key Points of This Chapter
 
-In this chapter, we introduce the term "*estimands*" and the *estimands framework* as outlined in the ICH E9(R1) addendum @ICH_E9R1_2019. We provide a list of key introductory references on estimands with our summary intended to facilitate an easy introduction to estimands. 
+In this chapter, we will introduce the concept of "estimands", "estimators", and "estimates" before introducing the "estimands framework" outlined in the ICH E9(R1) addendum. We will establish how the ICH E9(R1) estimands framework offers a structured way to plan and operationalize our research questions for clinical research
 
-The key points of this chapter are: 
+To guide further readings for the readers, we will also provide a list of of key introductory references on estimands framework to faciliate an easy introduction to estimands and estimands framework.
 
-1. Estimands are ...
+The key points of this chapter are:
 
-2. The estimands framework offers a structured way to plan and operationalize our research questions in a clear way. 
+1.  An "estimand" refers to a target quantity we wish to estimate with our "estimator" (i.e., statistical analysis). The results of our statistical analysis are an "estimate" of the estimand.
 
-## What is an Estimand?
+2.  Estimands, estimators, and estimates have existed long before the ICH E9(R1) addendum. Even without the use of the ICH E9(R1) addendum, every statistical analysis (i.e., estimator) has a target estimand that it aims to estimate.
 
-## Why Do Estimands Matter?
+3.  The ICH E9(R1) estimands framework offers a structured way to plan and operationalize our research questions.
+
+4.  Given that the ICH E9(R1) addendum is a regulatory document that has now veen adopted by many global regulatory agencies, the era of estimands framework has already begun (regardless of how one's view).
+
+# Background
+
+On November 20th, 2019, the ICH[^estimands-laymans-terms-1] has formally recommended an adoption of the addendum to the ICH E9,[^estimands-laymans-terms-2] also known as the ICH E9(R1) Addendum[^estimands-laymans-terms-3].@ICH_E9R1_2019 Even the it is not a new concept, the term "estimands" has received a lot of attention thereafter. The "estimands framework" introduced in the addendum aims to bring clarity in how clinical trials are designed, analyzed, and interpreted. The addendum aims to achieve this by promoting more precise specification of the treatment effects of interest in the design and statistical analysis of clinical trials.
+
+[^estimands-laymans-terms-1]: International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use
+
+[^estimands-laymans-terms-2]: ICH Harmonised Tripartite Guideline: Statistical Principles for Clinical Trials E9
+
+[^estimands-laymans-terms-3]: ICH E(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials
+
+Estimands have existed well before 2019. They always have existed in a way. There is a common saying behind every analysis, there is an estimand. Before diving further into the estimands framework and the details covered in this regulatory document, let's discuss the concept of estimands.
+
+The term "estimands" refers to a target quantity that we are aiming to estimate with our statistical analysis.@Lundberg2021 Statistical analysis is an "estimator" applied to our data to estimate this target quantity. The results of our analysis are an estimate of target quantity, since an estimand is an unknown parameter. 
+
+An useful analogy to understand the relationship between "estimands / estimators / and estimates" is baking ![Baking Analogy for Estimands, Estimators, and Estimates](../Images/estimand-baking-analogy.png).@Deng2022 This figure aims to illustrate how we turn our target estimand into an estimate by applying an estimator.@Deng202 The cake shown on the top is the cake we want to bake (what we seek). This is our target `estimand.` The recipe is our `estimator` that we use to make the cake. The questionable looking cake shown at the bottom is our `estimate` or results we end up with from our analyses. If our recipe or estimator could provide more valid and unbiased estimated of our target estimand, the cake we end up baking would look closer to our target cake shown on the top. 
+
+In the context of clinical trials, statistical analyses (estimators) are applied to the trial data to derive an "estimate" of various treatment effects. The estimated treatment effects, often expressed as an point estimate with its underlying 95% confidence intervals, derived from the trial data based on a specified statistical analysis are an "estimate" of our target estimand. We describe estimands as our target, since we often design with specific analytical details that are outlined in the trial's protocol and the statistical analysis plan. 
+
+Independent of whether the ICH E9(R1) addendum and its estimands framework are followed or not, there is a treatment effect we are aiming to estimate in our clinical trials. Statistical analyses applied to non-clinical trial data are not any different. For analyses being applied to observational data, we would again choose specific analyses based on the clinical context, data types, and etc. Given that behind every analyses, there are estimands that we end up targeting. We believe that being explicit and careful about our target estimands will help us design and conduct better research studies. 
 
 ## The ICH E9(R1) Addendum
 
+The estimands framework outlined in the ICH E9(R1) addendum aims to promote clear descriptions of treatment effects being targeted in clinical trials.@ICH_E9R1_2019 Having clarity in both the target and reported treatment effects (estimands and estimates) can facilitate more informed decisions to be made by different stakeholders. The addendum presents a structured way to plan and operationalize our research questions by defining five attributes that help define the estimands (treatment effects) of interest. 
+
+The attributes of estimands include: 
+1. Treatment condition
+
+2. Population
+
+3. Endpoint (or variable)
+
+4. Intercurrent events (or post-randomization events) and strategies for the specified intercurrent events 
+
+5. Population-level summary
+
+*Another chapter will be dedicated to discuss these attributes in more detail.*
+
+Treatment condition ...
+
 ## Historical Context: From Intention-to-Treat to Estimands
 
-# References 
+# References
