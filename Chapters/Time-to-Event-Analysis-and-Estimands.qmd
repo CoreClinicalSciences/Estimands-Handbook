@@ -20,7 +20,7 @@ Oct 06 2025 (version 0.4)
 ## Introduction
 Time-to-event (T2E) endpoints such as overall survival (OS), progression-free survival (PFS), or time to relapse are foundational in modern clinical trials. These endpoints record the time from a defined origin (e.g., randomization) until an event of interest (e.g., death, disease progression) occurs. Unlike binary outcomes that measure *if* an event occurs, T2E endpoints capture *when* it occurs, thereby reflecting both the occurrence and timing of outcomes.
 
-Traditional analyses, like the log-rank test or Cox proportional-hazards model, are long-standing standards. Yet they often conflate the **scientific question** (estimand) with the **statistical model** (estimator). The ICH E9(R1) Addendum [@ICH_E9R1_2019] established a framework that forces clarity: investigators must define what treatment effect they want to estimate before deciding how to estimate it.  
+Traditional analyses, such as the log-rank test or Cox proportional-hazards model, are long-standing standards. Yet they often conflate the **scientific question** (estimand) with the **statistical model** (estimator). The ICH E9(R1) Addendum [@ICH_E9R1_2019] established a framework that forces clarity: investigators must define what treatment effect they want to estimate before deciding how to estimate it.  
 
 Recent expository work by Kahan et al. (2024) [@kahan2024estimands] emphasises that estimands extend the traditional PICO framework by adding two essential attributes: (i) how intercurrent events are handled and (ii) what summary measure defines the treatment contrast. This explicit structure ensures that for endpoints such as survival, investigators separate the *scientific question* (the estimand) from the *analytic approach* (the estimator), preventing the common ambiguity of intention-to-treat versus per-protocol analyses.
 
@@ -35,7 +35,7 @@ The ICH E9(R1) addendum defines an estimand using four attributes:
 4. **Summary measure** – the population-level contrast (e.g., hazard ratio, RMST, survival-probability difference).
 
 ### ICH E9(R1) and Time-to-Event Endpoints
-The guideline does not introduce a new survival-analysis framework but uses T2E examples to clarify key ideas. It notes that death, treatment switching, and withdrawal are intercurrent events that must be pre-specified. For example, PFS can adopt a **composite strategy**, counting both progression and death as events, or a **hypothetical strategy**, asking what would have happened had death not occurred before progression. The guideline also stresses that **censoring is part of the estimator, not the estimand**: administrative censoring at trial close differs from intercurrent events like death before progression. Survival endpoints therefore exemplify where the estimand framework most directly intersects with censoring assumptions.
+The guideline does not introduce a new survival-analysis framework but uses T2E examples to clarify key ideas. It notes that death, treatment switching, and withdrawal are intercurrent events that must be pre-specified. For example, PFS can adopt a **composite strategy**, counting both progression and death as events, or a **hypothetical strategy**, asking what would have happened had death not occurred before progression. The guideline also stresses that *censoring is part of the estimator, not the estimand*: administrative censoring at trial close differs from intercurrent events like death before progression. Survival endpoints therefore exemplify where the estimand framework most directly intersects with censoring assumptions.
 
 ---
 
@@ -49,7 +49,7 @@ Two of the most common intercurrent events in time-to-event studies are *treatme
 
 For outcomes such as PFS or OS, this choice determines whether the estimand captures overall clinical benefit or the effect in an idealised scenario without additional interventions. Pre-specifying which intercurrent-event strategy applies to each type of event ensures interpretability and alignment between the trial’s objective and its statistical analysis.  
 
-Kahan et al. (2024) classify intercurrent events as either *treatment-modifying* (e.g., discontinuation, switching) or *truncating*, where the event precludes the outcome from being observed—death in a quality-of-life trial being a canonical example. In T2E analyses, these truncating events correspond to *competing risks* that must be explicitly addressed in the estimand definition rather than treated as simple censoring.
+Kahan et al. (2024) [@kahan2024estimands] classify intercurrent events as either *treatment-modifying* (e.g., discontinuation, switching) or *truncating*, where the event precludes the outcome from being observed—death in a quality-of-life trial being a canonical example. In T2E analyses, these truncating events correspond to *competing risks* that must be explicitly addressed in the estimand definition rather than treated as simple censoring.
 
 ---
 
