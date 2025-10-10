@@ -2,10 +2,14 @@
 title: "Estimands and Causal Inference"
 bibliography: chap3.bib
 ---
-> **Summary:** One or two sentences summarizing what this chapter covers.
+## Authors: 
 
-##
+Jay JH Park, Shomoita Alam 
 
-##
+## Date of Last Update
+
+Sept 18th, 2025 (version 0.1)
+
+## Key Points of This Chapter 
 
 # References

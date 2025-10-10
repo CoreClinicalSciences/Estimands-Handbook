@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -69,6 +89,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -97,6 +146,9 @@ ul.task-list li input[type="checkbox"] {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">A Living Handbook on Estimands</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/CoreClinicalSciences/Estimands-Handbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -109,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Why Are We Writing This Book</span></a>
+ <span class="menu-text">Welcome</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -158,11 +210,33 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"><span class="header-section-number">4.1</span> </a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"><span class="header-section-number">4.2</span> </a></li>
+  <li><a href="#authors" id="toc-authors" class="nav-link active" data-scroll-target="#authors"><span class="header-section-number">4.1</span> Authors</a></li>
+  <li><a href="#date-of-last-update" id="toc-date-of-last-update" class="nav-link" data-scroll-target="#date-of-last-update"><span class="header-section-number">4.2</span> Date of Last Update</a></li>
+  <li><a href="#key-points-of-this-chapter" id="toc-key-points-of-this-chapter" class="nav-link" data-scroll-target="#key-points-of-this-chapter"><span class="header-section-number">4.3</span> Key Points of This Chapter</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">4.4</span> Introduction</a></li>
+  <li><a href="#the-estimand-framework-for-t2e-endpoints" id="toc-the-estimand-framework-for-t2e-endpoints" class="nav-link" data-scroll-target="#the-estimand-framework-for-t2e-endpoints"><span class="header-section-number">4.5</span> The Estimand Framework for T2E Endpoints</a>
+  <ul class="collapse">
+  <li><a href="#ich-e9r1-and-time-to-event-endpoints" id="toc-ich-e9r1-and-time-to-event-endpoints" class="nav-link" data-scroll-target="#ich-e9r1-and-time-to-event-endpoints"><span class="header-section-number">4.5.1</span> ICH E9(R1) and Time-to-Event Endpoints</a></li>
+  </ul></li>
+  <li><a href="#handling-intercurrent-events" id="toc-handling-intercurrent-events" class="nav-link" data-scroll-target="#handling-intercurrent-events"><span class="header-section-number">4.6</span> Handling Intercurrent Events</a>
+  <ul class="collapse">
+  <li><a href="#treatment-discontinuation-and-rescue-therapy" id="toc-treatment-discontinuation-and-rescue-therapy" class="nav-link" data-scroll-target="#treatment-discontinuation-and-rescue-therapy"><span class="header-section-number">4.6.1</span> Treatment Discontinuation and Rescue Therapy</a></li>
+  <li><a href="#treatment-switching-and-cross-over-overall-survival" id="toc-treatment-switching-and-cross-over-overall-survival" class="nav-link" data-scroll-target="#treatment-switching-and-cross-over-overall-survival"><span class="header-section-number">4.6.2</span> Treatment Switching and Cross-Over (Overall Survival)</a></li>
+  <li><a href="#composite-and-hypothetical-strategies-progression-free-survival" id="toc-composite-and-hypothetical-strategies-progression-free-survival" class="nav-link" data-scroll-target="#composite-and-hypothetical-strategies-progression-free-survival"><span class="header-section-number">4.6.3</span> Composite and Hypothetical Strategies (Progression-Free Survival)</a></li>
+  <li><a href="#while-on-treatment-and-while-alive-strategies" id="toc-while-on-treatment-and-while-alive-strategies" class="nav-link" data-scroll-target="#while-on-treatment-and-while-alive-strategies"><span class="header-section-number">4.6.4</span> While-on-Treatment and While-Alive Strategies</a></li>
+  <li><a href="#principal-stratum-strategy-aids-free-survival" id="toc-principal-stratum-strategy-aids-free-survival" class="nav-link" data-scroll-target="#principal-stratum-strategy-aids-free-survival"><span class="header-section-number">4.6.5</span> Principal-Stratum Strategy (AIDS-Free Survival)</a></li>
+  </ul></li>
+  <li><a href="#censoring-and-estimation" id="toc-censoring-and-estimation" class="nav-link" data-scroll-target="#censoring-and-estimation"><span class="header-section-number">4.7</span> Censoring and Estimation</a>
+  <ul class="collapse">
+  <li><a href="#example-dependent-censoring-from-subsequent-therapy" id="toc-example-dependent-censoring-from-subsequent-therapy" class="nav-link" data-scroll-target="#example-dependent-censoring-from-subsequent-therapy"><span class="header-section-number">4.7.1</span> Example – Dependent Censoring from Subsequent Therapy</a></li>
+  <li><a href="#example-independent-administrative-censoring" id="toc-example-independent-administrative-censoring" class="nav-link" data-scroll-target="#example-independent-administrative-censoring"><span class="header-section-number">4.7.2</span> Example – Independent Administrative Censoring</a></li>
+  </ul></li>
+  <li><a href="#choice-of-summary-measure" id="toc-choice-of-summary-measure" class="nav-link" data-scroll-target="#choice-of-summary-measure"><span class="header-section-number">4.8</span> Choice of Summary Measure</a></li>
+  <li><a href="#illustrative-case-examples" id="toc-illustrative-case-examples" class="nav-link" data-scroll-target="#illustrative-case-examples"><span class="header-section-number">4.9</span> Illustrative Case Examples</a></li>
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions"><span class="header-section-number">4.10</span> Conclusions</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">5</span> References</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/CoreClinicalSciences/Estimands-Handbook/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -186,19 +260,244 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<blockquote class="blockquote">
-<p><strong>Summary:</strong> One or two sentences summarizing what this chapter covers.</p>
-</blockquote>
-<section id="section" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="section"><span class="header-section-number">4.1</span> </h2>
+<section id="authors" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="authors"><span class="header-section-number">4.1</span> Authors</h2>
+<p>Jay JH Park, Shomoita Alam</p>
 </section>
-<section id="section-1" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="section-1"><span class="header-section-number">4.2</span> </h2>
+<section id="date-of-last-update" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="date-of-last-update"><span class="header-section-number">4.2</span> Date of Last Update</h2>
+<p>Oct 06 2025 (version 0.4)</p>
+</section>
+<section id="key-points-of-this-chapter" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="key-points-of-this-chapter"><span class="header-section-number">4.3</span> Key Points of This Chapter</h2>
+<ul>
+<li>Time-to-event (T2E) endpoints require explicit specification of estimands to separate the clinical question from the statistical method.<br>
+</li>
+<li>Censoring is a property of the estimator, not the estimand; assumptions (independent vs dependent) must align with the target question.<br>
+</li>
+<li>Intercurrent events such as treatment switching, rescue medication, and death determine which estimand strategy (treatment-policy, hypothetical, composite, or principal-stratum) is relevant.<br>
+</li>
+<li>Under non-proportional hazards, alternatives to the hazard ratio, e.g., restricted mean survival time (RMST), often provide more interpretable summaries.</li>
+</ul>
+<hr>
+</section>
+<section id="introduction" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="introduction"><span class="header-section-number">4.4</span> Introduction</h2>
+<p>Time-to-event (T2E) endpoints such as overall survival (OS), progression-free survival (PFS), or time to relapse are foundational in modern clinical trials. These endpoints record the time from a defined origin (e.g., randomization) until an event of interest (e.g., death, disease progression) occurs. Unlike binary outcomes that measure <em>if</em> an event occurs, T2E endpoints capture <em>when</em> it occurs, thereby reflecting both the occurrence and timing of outcomes.</p>
+<p>Traditional analyses, like the log-rank test or Cox proportional-hazards model, are long-standing standards. Yet they often conflate the <strong>scientific question</strong> (estimand) with the <strong>statistical model</strong> (estimator). The ICH E9(R1) Addendum<span class="citation" data-cites="ICH_E9R1_2019"><sup><a href="#ref-ICH_E9R1_2019" role="doc-biblioref">1</a></sup></span> established a framework that forces clarity: investigators must define what treatment effect they want to estimate before deciding how to estimate it.</p>
+<p>Recent expository work by Kahan et al.&nbsp;(2024)<span class="citation" data-cites="kahan2024estimands"><sup><a href="#ref-kahan2024estimands" role="doc-biblioref">2</a></sup></span> emphasises that estimands extend the traditional PICO framework by adding two essential attributes: (i) how intercurrent events are handled and (ii) what summary measure defines the treatment contrast. This explicit structure ensures that for endpoints such as survival, investigators separate the <em>scientific question</em> (the estimand) from the <em>analytic approach</em> (the estimator), preventing the common ambiguity of intention-to-treat versus per-protocol analyses.</p>
+<hr>
+</section>
+<section id="the-estimand-framework-for-t2e-endpoints" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="the-estimand-framework-for-t2e-endpoints"><span class="header-section-number">4.5</span> The Estimand Framework for T2E Endpoints</h2>
+<p>The ICH E9(R1) addendum defines an estimand using four attributes:</p>
+<ol type="1">
+<li><strong>Population</strong> – the patients of interest.<br>
+</li>
+<li><strong>Variable</strong> – the outcome measured (e.g., OS, PFS, time to relapse).<br>
+</li>
+<li><strong>Intervention effect</strong> – how intercurrent events (discontinuation, rescue therapy, treatment switching, or death) are addressed.<br>
+</li>
+<li><strong>Summary measure</strong> – the population-level contrast (e.g., hazard ratio, RMST, survival-probability difference).</li>
+</ol>
+<section id="ich-e9r1-and-time-to-event-endpoints" class="level3" data-number="4.5.1">
+<h3 data-number="4.5.1" class="anchored" data-anchor-id="ich-e9r1-and-time-to-event-endpoints"><span class="header-section-number">4.5.1</span> ICH E9(R1) and Time-to-Event Endpoints</h3>
+<p>The guideline does not introduce a new survival-analysis framework but uses T2E examples to clarify key ideas. It notes that death, treatment switching, and withdrawal are intercurrent events that must be pre-specified. For example, PFS can adopt a <strong>composite strategy</strong>, counting both progression and death as events, or a <strong>hypothetical strategy</strong>, asking what would have happened had death not occurred before progression. The guideline also stresses that <strong>censoring is part of the estimator, not the estimand</strong>: administrative censoring at trial close differs from intercurrent events like death before progression. Survival endpoints therefore exemplify where the estimand framework most directly intersects with censoring assumptions.</p>
+<hr>
+</section>
+</section>
+<section id="handling-intercurrent-events" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="handling-intercurrent-events"><span class="header-section-number">4.6</span> Handling Intercurrent Events</h2>
+<p>Intercurrent events shape the scientific question for T2E endpoints. In what follows, we move from common events that occur in many trials (discontinuation and rescue) to settings that are especially prominent in survival analyses (treatment switching, death within PFS, while-alive perspectives), and finally to a worked principal-stratum example.</p>
+<section id="treatment-discontinuation-and-rescue-therapy" class="level3" data-number="4.6.1">
+<h3 data-number="4.6.1" class="anchored" data-anchor-id="treatment-discontinuation-and-rescue-therapy"><span class="header-section-number">4.6.1</span> Treatment Discontinuation and Rescue Therapy</h3>
+<p><em>Concept adapted from Mallinckrodt et al., 2019<span class="citation" data-cites="mallinckrodt2019estimands"><sup><a href="#ref-mallinckrodt2019estimands" role="doc-biblioref">3</a></sup></span>.</em></p>
+<p>Two of the most common intercurrent events in time-to-event studies are <em>treatment discontinuation</em> and the <em>use of rescue therapy</em>. Each can be addressed using different strategies depending on the trial objective. The handbook emphasises that a <strong>treatment-policy strategy</strong> is appropriate when the question of interest concerns the overall effect of initiating treatment regardless of adherence or rescue use, reflecting real-world clinical practice. By contrast, a <strong>hypothetical strategy</strong> asks what the treatment effect would have been if discontinuation or rescue therapy had not occurred, thereby isolating biological efficacy from treatment implementation.</p>
+<p>For outcomes such as PFS or OS, this choice determines whether the estimand captures overall clinical benefit or the effect in an idealised scenario without additional interventions. Pre-specifying which intercurrent-event strategy applies to each type of event ensures interpretability and alignment between the trial’s objective and its statistical analysis.</p>
+<p>Kahan et al.&nbsp;(2024) classify intercurrent events as either <em>treatment-modifying</em> (e.g., discontinuation, switching) or <em>truncating</em>, where the event precludes the outcome from being observed—death in a quality-of-life trial being a canonical example. In T2E analyses, these truncating events correspond to <em>competing risks</em> that must be explicitly addressed in the estimand definition rather than treated as simple censoring.</p>
+<hr>
+</section>
+<section id="treatment-switching-and-cross-over-overall-survival" class="level3" data-number="4.6.2">
+<h3 data-number="4.6.2" class="anchored" data-anchor-id="treatment-switching-and-cross-over-overall-survival"><span class="header-section-number">4.6.2</span> Treatment Switching and Cross-Over (Overall Survival)</h3>
+<p><em>Example adapted from Manitz et al., 2021<span class="citation" data-cites="manitz2022estimands"><sup><a href="#ref-manitz2022estimands" role="doc-biblioref">4</a></sup></span>.</em></p>
+<p>Among intercurrent events in survival trials, treatment switching is the one most likely to alter the contrast that OS appears to estimate, because it changes post-randomisation therapy pathways in ways that depend on prognosis and treatment response.</p>
+<p>Consider a randomised oncology trial comparing an experimental drug A with standard therapy B for overall survival. Mid-trial, patients assigned to B may cross over to A after progression.</p>
+<ul>
+<li>A <strong>treatment-policy estimand</strong> asks: <em>What is the effect of being randomised to A versus B, regardless of switching?</em> This reflects an intent-to-treat (ITT) principle and aligns with real-world clinical practice when cross-over would occur post-approval.<br>
+</li>
+<li>A <strong>hypothetical estimand</strong> asks: <em>What would overall survival have been if no switching occurred?</em> This isolates the pure biologic effect of A but requires assumptions about unobserved survival times.</li>
+</ul>
+<p>To estimate the hypothetical effect, analysts can use rank-preserving structural failure-time models (RPSFT), inverse-probability-of-censoring weighting (IPCW), or two-stage models. These approaches correct for dependent censoring induced by switching, whereas naïvely censoring at the switch point biases the result. Manitz et al.&nbsp;emphasise the importance of specifying both the estimand and estimation method prospectively in the SAP<span class="citation" data-cites="manitz2022estimands"><sup><a href="#ref-manitz2022estimands" role="doc-biblioref">4</a></sup></span>.</p>
+<p>Whereas switching primarily complicates OS by modifying post-progression care, PFS raises a different question: how to treat deaths that occur before progression when defining the variable itself.</p>
+<hr>
+</section>
+<section id="composite-and-hypothetical-strategies-progression-free-survival" class="level3" data-number="4.6.3">
+<h3 data-number="4.6.3" class="anchored" data-anchor-id="composite-and-hypothetical-strategies-progression-free-survival"><span class="header-section-number">4.6.3</span> Composite and Hypothetical Strategies (Progression-Free Survival)</h3>
+<p><em>Example based on Siegel et al., 2024<span class="citation" data-cites="siegel2024time"><sup><a href="#ref-siegel2024time" role="doc-biblioref">5</a></sup></span> and FDA oncology guidance.</em></p>
+<p>PFS illustrates how the estimand is determined by whether death prior to documented progression is considered part of the outcome or a competing truncating event.</p>
+<p>In a metastatic-cancer study, progression-free survival (PFS) is defined as time from randomisation to disease progression or death. Two clinical questions may arise:</p>
+<ul>
+<li>Under a <strong>composite strategy</strong>, both progression and death are treated as events. This estimand reflects the patient-centric question “How long until disease progression or death?” and is usually estimated by Kaplan–Meier or Cox models.<br>
+</li>
+<li>Under a <strong>hypothetical strategy</strong>, one may ask what progression would have been <em>if death had not occurred prior to progression</em>. Patients dying before progression are censored at death. The validity of this approach rests on the assumption of independent censoring; if mortality risk relates to treatment, this assumption is violated<span class="citation" data-cites="siegel2024time"><sup><a href="#ref-siegel2024time" role="doc-biblioref">5</a></sup></span>.</li>
+</ul>
+<p>These two strategies answer distinct questions. The composite estimand describes <em>real-world benefit</em>; the hypothetical estimand isolates a biological effect uncontaminated by early mortality. Explicitly stating which is targeted prevents misinterpretation of PFS curves.</p>
+<hr>
+</section>
+<section id="while-on-treatment-and-while-alive-strategies" class="level3" data-number="4.6.4">
+<h3 data-number="4.6.4" class="anchored" data-anchor-id="while-on-treatment-and-while-alive-strategies"><span class="header-section-number">4.6.4</span> While-on-Treatment and While-Alive Strategies</h3>
+<p><em>Concept adapted from Mallinckrodt et al., 2019<span class="citation" data-cites="mallinckrodt2019estimands"><sup><a href="#ref-mallinckrodt2019estimands" role="doc-biblioref">3</a></sup></span>.</em></p>
+<p>Beyond composite and hypothetical choices for defining the variable, some questions focus explicitly on the period during which patients are alive and receiving therapy.</p>
+<p>A related approach described in the handbook is the <strong>while-on-treatment</strong> (or <strong>while-alive</strong>) strategy. Here, the variable is defined and measured only up to the time of treatment discontinuation or death. This strategy targets the treatment effect <em>while patients are receiving therapy</em> and is relevant for symptomatic or patient-reported outcomes analysed alongside survival endpoints.</p>
+<p>In survival contexts, a while-alive strategy can describe the probability of being both alive and on treatment over time, often estimated through <em>state-occupancy</em> or <em>multi-state models</em>. Although not always a primary estimand, this approach is valuable for capturing short-term treatment effects and for describing the duration of benefit before treatment discontinuation or death.</p>
+<hr>
+</section>
+<section id="principal-stratum-strategy-aids-free-survival" class="level3" data-number="4.6.5">
+<h3 data-number="4.6.5" class="anchored" data-anchor-id="principal-stratum-strategy-aids-free-survival"><span class="header-section-number">4.6.5</span> Principal-Stratum Strategy (AIDS-Free Survival)</h3>
+<p><em>Example adapted from Mallinckrodt et al., 2019<span class="citation" data-cites="mallinckrodt2019estimands"><sup><a href="#ref-mallinckrodt2019estimands" role="doc-biblioref">3</a></sup></span>.</em></p>
+<p>In the ACTG 175 HIV trial, investigators studied <em>time to first AIDS event or death</em>. Because some participants could initiate rescue therapy after a <span class="math inline">\(\geq 50\%\)</span> decline in CD4 count—thereby changing subsequent care and risk—defining an estimand required clarifying whose outcomes were being compared.</p>
+<p>Within this principal stratum, the variable of interest was the time to the first AIDS event or death. Treatment discontinuation was handled using a <strong>treatment-policy strategy</strong>, meaning that follow-up continued regardless of whether a participant stopped the assigned therapy. In contrast, the initiation of rescue therapy, defined as a <span class="math inline">\(\geq 50\%\)</span> decline in CD4 count, was handled using a <strong>principal-stratum strategy</strong>, because the estimand was defined among the subset of patients who, under either treatment, would not have required rescue therapy. The treatment effect was summarised using the hazard ratio for time to AIDS or death between treatment arms.</p>
+<p>To evaluate robustness to censoring and model assumptions, the authors performed sensitivity analyses that modified assumptions about the timing of unobserved events for censored participants. These analyses introduced delta <span class="math inline">\((\delta)\)</span> sensitivity parameters, which shift the assumed event times for censored individuals; negative values implying earlier events and positive values implying later events relative to the primary model. By varying <span class="math inline">\(\delta\)</span> for each treatment group (<span class="math inline">\(\delta_{0}\)</span> and <span class="math inline">\(\delta_{1}\)</span>), investigators could examine how different plausible departures from the “missing-at-random” assumption would influence the estimated hazard ratio. This approach illustrates how principal-stratum reasoning can be combined with standard survival methods to handle biological intercurrent events while transparently assessing the robustness of conclusions<span class="citation" data-cites="mallinckrodt2019estimands"><sup><a href="#ref-mallinckrodt2019estimands" role="doc-biblioref">3</a></sup></span>.</p>
+<hr>
+</section>
+</section>
+<section id="censoring-and-estimation" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="censoring-and-estimation"><span class="header-section-number">4.7</span> Censoring and Estimation</h2>
+<p>Censoring occurs when a patient’s event time is only partially observed. According to ICH E9(R1)<span class="citation" data-cites="ICH_E9R1_2019"><sup><a href="#ref-ICH_E9R1_2019" role="doc-biblioref">1</a></sup></span>, censoring relates to the <em>estimator</em>, not the estimand<span class="citation" data-cites="siegel2024time"><sup><a href="#ref-siegel2024time" role="doc-biblioref">5</a></sup></span>.</p>
+<ul>
+<li><strong>Independent censoring:</strong> those censored have the same risk beyond censoring as those still under observation.<br>
+</li>
+<li><strong>Dependent censoring:</strong> those censored differ systematically (e.g., withdrawal due to toxicity).<br>
+</li>
+<li><strong>Conditionally independent censoring:</strong> independence holds after adjusting for measured covariates<span class="citation" data-cites="mozumder2025time"><sup><a href="#ref-mozumder2025time" role="doc-biblioref">6</a></sup></span>.</li>
+</ul>
+<section id="example-dependent-censoring-from-subsequent-therapy" class="level3" data-number="4.7.1">
+<h3 data-number="4.7.1" class="anchored" data-anchor-id="example-dependent-censoring-from-subsequent-therapy"><span class="header-section-number">4.7.1</span> Example – Dependent Censoring from Subsequent Therapy</h3>
+<p>In a lung-cancer trial, patients doing well may seek additional off-protocol therapy earlier than others. Because better-prognosis patients are preferentially censored, the “censor-at-therapy” rule introduces dependent censoring. The standard Cox model then no longer targets the intended estimand. Causal estimators such as RPSFT or IPCW that model the switching mechanism provide unbiased estimation under weaker assumptions<span class="citation" data-cites="manitz2022estimands"><sup><a href="#ref-manitz2022estimands" role="doc-biblioref">4</a></sup></span>.</p>
+</section>
+<section id="example-independent-administrative-censoring" class="level3" data-number="4.7.2">
+<h3 data-number="4.7.2" class="anchored" data-anchor-id="example-independent-administrative-censoring"><span class="header-section-number">4.7.2</span> Example – Independent Administrative Censoring</h3>
+<p>At study closure, some patients remain alive and event-free. Censoring them at database lock is administrative and usually independent, posing no bias under either composite or treatment-policy estimands.</p>
+<p>Once the estimator has been chosen to match the estimand and its plausible censoring assumptions, a transparent plan for robustness checks is still needed.</p>
+<p>Beyond specific methods, Mallinckrodt et al.&nbsp;(2019)<span class="citation" data-cites="mallinckrodt2019estimands"><sup><a href="#ref-mallinckrodt2019estimands" role="doc-biblioref">3</a></sup></span> present a <em>hierarchy of sensitivity analyses</em> applicable across all estimands, including time-to-event endpoints. These range from <em>assumption-preserving</em> (varying parameters within the same model) to <em>assumption-relaxing</em> (modifying censoring or intercurrent-event assumptions) and <em>assumption-breaking</em> analyses (introducing entirely hypothetical counterfactual scenarios). For survival data, such sensitivity analyses may involve varying censoring assumptions, modelling competing risks, or shifting event times through <span class="math inline">\(\delta\)</span>-parameters. Structuring sensitivity analyses in this way clarifies which assumptions most influence inference and identifies which conclusions remain robust<span class="citation" data-cites="mallinckrodt2019estimands"><sup><a href="#ref-mallinckrodt2019estimands" role="doc-biblioref">3</a></sup></span>.</p>
+<p>Practical guidance from Siegel et al.&nbsp;(2024)<span class="citation" data-cites="siegel2024time"><sup><a href="#ref-siegel2024time" role="doc-biblioref">5</a></sup></span> and Mozumder et al.&nbsp;(2025)<span class="citation" data-cites="mozumder2025time"><sup><a href="#ref-mozumder2025time" role="doc-biblioref">6</a></sup></span> recommends:</p>
+<ol type="1">
+<li>Define the estimand first.<br>
+</li>
+<li>Select an estimator consistent with realistic censoring assumptions.<br>
+</li>
+<li>Document reasons for follow-up loss and record covariates predictive of both censoring and outcome.<br>
+</li>
+<li>Perform sensitivity analyses varying those assumptions.</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="choice-of-summary-measure" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="choice-of-summary-measure"><span class="header-section-number">4.8</span> Choice of Summary Measure</h2>
+<p>The summary measure is part of the estimand and should make the clinical meaning of the treatment effect transparent.</p>
+<p>The <em>hazard ratio</em> from a Cox model is widely used but relies on proportional-hazards and independent-censoring assumptions. It can also obscure absolute treatment differences<span class="citation" data-cites="rufibach2019treatment"><sup><a href="#ref-rufibach2019treatment" role="doc-biblioref">7</a></sup></span>.</p>
+<p>Composite endpoints are another strategy emphasised in the handbook for T2E outcomes where multiple event types, such as hospitalisation and death, reflect a unified notion of treatment benefit. When using a composite strategy, investigators must ensure that all included events have similar clinical meaning and directionality of effect. In many oncology and cardiovascular trials, death dominates the composite, making interpretability dependent on whether earlier occurrence of any component consistently indicates worse outcomes. The selected summary measure, whether a hazard ratio or a difference in cumulative incidence, should therefore align with the composite’s clinical interpretation<span class="citation" data-cites="mallinckrodt2019estimands"><sup><a href="#ref-mallinckrodt2019estimands" role="doc-biblioref">3</a></sup></span>.</p>
+<p>When composite definitions or hazard-based summaries obscure absolute differences over clinically relevant horizons, alternative time-anchored summaries are preferable.</p>
+<p>When proportional-hazards assumptions fail, alternatives provide clearer interpretations:</p>
+<ul>
+<li><strong>Restricted Mean Survival Time (RMST):</strong> the average survival time up to a pre-specified <span class="math inline">\(\tau\)</span>; difference in RMST directly answers “How many extra months on average does the new treatment provide within <span class="math inline">\(\tau\)</span> months?”<br>
+</li>
+<li><strong>Survival probability difference</strong> or <strong>ratio</strong> at a fixed time.<br>
+</li>
+<li><strong>Median or quantile survival difference.</strong></li>
+</ul>
+<p>Choice of summary should align with the trial’s objective: e.g., for early-benefit drugs with delayed toxicity, RMST over 24 months may be more informative than a single HR.</p>
+<hr>
+</section>
+<section id="illustrative-case-examples" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="illustrative-case-examples"><span class="header-section-number">4.9</span> Illustrative Case Examples</h2>
+<p>The three examples above anchor the abstract strategy choices in concrete settings. Table 1 summarises how the intercurrent events, estimand strategies, and compatible estimators align for each scenario.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 23%">
+<col style="width: 19%">
+<col style="width: 20%">
+<col style="width: 24%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Scenario</strong></th>
+<th style="text-align: left;"><strong>Intercurrent Event(s)</strong></th>
+<th style="text-align: left;"><strong>Estimand Strategy</strong></th>
+<th style="text-align: left;"><strong>Estimator / Method</strong></th>
+<th style="text-align: left;"><strong>Interpretation of Effect</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Overall Survival with Cross-Over</strong></td>
+<td style="text-align: left;">Patients switch to the experimental treatment after progression or access similar therapies off-protocol.</td>
+<td style="text-align: left;"><em>Hypothetical</em> — estimates what survival would have been if no switching had occurred.</td>
+<td style="text-align: left;">Causal estimators such as Rank-Preserving Structural Failure-Time Models (RPSFT), Inverse Probability of Censoring Weighting (IPCW), or two-stage models.</td>
+<td style="text-align: left;">Quantifies the treatment effect on survival in a setting where cross-over is prevented.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Progression-Free Survival with Death Before Progression</strong></td>
+<td style="text-align: left;">Death occurs prior to documented progression.</td>
+<td style="text-align: left;"><em>Composite</em> — counts both progression and death as events.<br><em>Hypothetical</em> — censors at death to ask what progression would have been if death had not occurred.</td>
+<td style="text-align: left;">Kaplan–Meier estimator or Cox proportional-hazards model, depending on the chosen strategy.</td>
+<td style="text-align: left;">Composite estimand reflects overall clinical benefit; hypothetical estimand isolates the biological effect of delaying progression.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>AIDS-Free Survival (HIV)</strong></td>
+<td style="text-align: left;">CD4 cell count falls below 50 % threshold, triggering rescue therapy; some treatment discontinuation.</td>
+<td style="text-align: left;"><em>Principal-Stratum</em> for rescue initiation (estimand defined among patients who would not require rescue under either treatment).<br><em>Treatment-Policy</em> for discontinuation.</td>
+<td style="text-align: left;">Stratified Cox model with sensitivity analyses, such as multiple imputation or δ-parameter shifts.</td>
+<td style="text-align: left;">Measures the treatment effect on time to AIDS or death among patients maintaining immune stability, while assessing robustness to censoring assumptions.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 1.</strong> Summary of illustrative estimands for common time-to-event (T2E) scenarios.</p>
+<hr>
+</section>
+<section id="conclusions" class="level2" data-number="4.10">
+<h2 data-number="4.10" class="anchored" data-anchor-id="conclusions"><span class="header-section-number">4.10</span> Conclusions</h2>
+<p>Embedding time-to-event endpoints within the estimand framework makes explicit the link between trial objectives and statistical analysis. Investigators should:</p>
+<ul>
+<li>Specify intercurrent-event strategies up front.<br>
+</li>
+<li>Treat censoring as part of estimation, not the estimand.<br>
+</li>
+<li>Select summary measures that best convey the scientific question.</li>
+</ul>
+<p>Such clarity enhances interpretability, comparability, and regulatory confidence in survival-endpoint analyses.</p>
+<p>The broader framework outlined by Mallinckrodt et al.&nbsp;(2019) reinforces that intercurrent-event strategies are not isolated decisions but part of a coherent system linking trial objectives, analysis methods, and sensitivity analyses. When applied to survival endpoints, this structure ensures that treatment effects are both clinically meaningful and statistically defensible.</p>
+<p>As Kahan et al.&nbsp;(2024)<span class="citation" data-cites="kahan2024estimands"><sup><a href="#ref-kahan2024estimands" role="doc-biblioref">2</a></sup></span> argue, estimands provide a practical mechanism for aligning study objectives, data collection, and analysis plans. In survival trials, this alignment clarifies whether interest lies in real-world treatment policy effects or idealised biological effects, and ensures that censoring rules, competing-risk handling, and sensitivity analyses are coherent with that intent.</p>
 </section>
 <section id="references" class="level1" data-number="5">
 <h1 data-number="5"><span class="header-section-number">5</span> References</h1>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-ICH_E9R1_2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><em><span>ICH</span> <span>E9(R1)</span> Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials</em>. <a href="https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf">https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf</a> (2019).</div>
+</div>
+<div id="ref-kahan2024estimands" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Kahan, B. C., Hindley, J., Edwards, M., Cro, S. &amp; Morris, T. P. The estimands framework: A primer on the ICH E9 (R1) addendum. <em>bmj</em> <strong>384</strong>, (2024).</div>
+</div>
+<div id="ref-mallinckrodt2019estimands" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Mallinckrodt, C., Molenberghs, G., Lipkovich, I. &amp; Ratitch, B. <em>Estimands, Estimators and Sensitivity Analysis in Clinical Trials</em>. (Chapman; Hall/CRC, 2019).</div>
+</div>
+<div id="ref-manitz2022estimands" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Manitz, J. <em>et al.</em> Estimands for overall survival in clinical trials with treatment switching in oncology. <em>Pharmaceutical Statistics</em> <strong>21</strong>, 150–162 (2022).</div>
+</div>
+<div id="ref-siegel2024time" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Siegel, J. M. <em>et al.</em> Time-to-event estimands and loss to follow-up in oncology in light of the estimands guidance. <em>Pharmaceutical Statistics</em> <strong>23</strong>, 709–727 (2024).</div>
+</div>
+<div id="ref-mozumder2025time" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Mozumder, S. I. <em>et al.</em> Time-to-event estimands in oncology trials: What’s censoring got to do, got to do with it? <em>Statistics in Biopharmaceutical Research</em> 1–6 (2025).</div>
+</div>
+<div id="ref-rufibach2019treatment" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Rufibach, K. Treatment effect quantification for time-to-event endpoints–estimands, analysis strategies, and beyond. <em>Pharmaceutical statistics</em> <strong>18</strong>, 145–165 (2019).</div>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -615,4 +914,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/CoreClinicalSciences/Estimands-Handbook/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

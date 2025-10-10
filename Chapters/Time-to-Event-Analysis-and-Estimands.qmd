@@ -1,12 +1,179 @@
 ---
-title: "Time-to-Event Analysis and Estimands "
-bibliography: chap4.bib
+title: "Time-to-Event Analysis and Estimands"
+bibliography: Time-to-Event-Analysis-and-Estimands.bib
 ---
 
-> **Summary:** One or two sentences summarizing what this chapter covers.
+## Authors
+Jay JH Park, Shomoita Alam  
 
-##
+## Date of Last Update
+Oct 06 2025 (version 0.4)
 
-##
+## Key Points of This Chapter
+- Time-to-event (T2E) endpoints require explicit specification of estimands to separate the clinical question from the statistical method.  
+- Censoring is a property of the estimator, not the estimand; assumptions (independent vs dependent) must align with the target question.  
+- Intercurrent events such as treatment switching, rescue medication, and death determine which estimand strategy (treatment-policy, hypothetical, composite, or principal-stratum) is relevant.  
+- Under non-proportional hazards, alternatives to the hazard ratio, e.g., restricted mean survival time (RMST), often provide more interpretable summaries.  
+
+---
+
+## Introduction
+Time-to-event (T2E) endpoints such as overall survival (OS), progression-free survival (PFS), or time to relapse are foundational in modern clinical trials. These endpoints record the time from a defined origin (e.g., randomization) until an event of interest (e.g., death, disease progression) occurs. Unlike binary outcomes that measure *if* an event occurs, T2E endpoints capture *when* it occurs, thereby reflecting both the occurrence and timing of outcomes.
+
+Traditional analyses, like the log-rank test or Cox proportional-hazards model, are long-standing standards. Yet they often conflate the **scientific question** (estimand) with the **statistical model** (estimator). The ICH E9(R1) Addendum [@ICH_E9R1_2019] established a framework that forces clarity: investigators must define what treatment effect they want to estimate before deciding how to estimate it.  
+
+Recent expository work by Kahan et al. (2024) [@kahan2024estimands] emphasises that estimands extend the traditional PICO framework by adding two essential attributes: (i) how intercurrent events are handled and (ii) what summary measure defines the treatment contrast. This explicit structure ensures that for endpoints such as survival, investigators separate the *scientific question* (the estimand) from the *analytic approach* (the estimator), preventing the common ambiguity of intention-to-treat versus per-protocol analyses.
+
+---
+
+## The Estimand Framework for T2E Endpoints
+The ICH E9(R1) addendum defines an estimand using four attributes:
+
+1. **Population** – the patients of interest.  
+2. **Variable** – the outcome measured (e.g., OS, PFS, time to relapse).  
+3. **Intervention effect** – how intercurrent events (discontinuation, rescue therapy, treatment switching, or death) are addressed.  
+4. **Summary measure** – the population-level contrast (e.g., hazard ratio, RMST, survival-probability difference).
+
+### ICH E9(R1) and Time-to-Event Endpoints
+The guideline does not introduce a new survival-analysis framework but uses T2E examples to clarify key ideas. It notes that death, treatment switching, and withdrawal are intercurrent events that must be pre-specified. For example, PFS can adopt a **composite strategy**, counting both progression and death as events, or a **hypothetical strategy**, asking what would have happened had death not occurred before progression. The guideline also stresses that **censoring is part of the estimator, not the estimand**: administrative censoring at trial close differs from intercurrent events like death before progression. Survival endpoints therefore exemplify where the estimand framework most directly intersects with censoring assumptions.
+
+---
+
+## Handling Intercurrent Events
+Intercurrent events shape the scientific question for T2E endpoints. In what follows, we move from common events that occur in many trials (discontinuation and rescue) to settings that are especially prominent in survival analyses (treatment switching, death within PFS, while-alive perspectives), and finally to a worked principal-stratum example.
+
+### Treatment Discontinuation and Rescue Therapy
+*Concept adapted from Mallinckrodt et al., 2019 [@mallinckrodt2019estimands].*
+
+Two of the most common intercurrent events in time-to-event studies are *treatment discontinuation* and the *use of rescue therapy*. Each can be addressed using different strategies depending on the trial objective. The handbook emphasises that a **treatment-policy strategy** is appropriate when the question of interest concerns the overall effect of initiating treatment regardless of adherence or rescue use, reflecting real-world clinical practice. By contrast, a **hypothetical strategy** asks what the treatment effect would have been if discontinuation or rescue therapy had not occurred, thereby isolating biological efficacy from treatment implementation.  
+
+For outcomes such as PFS or OS, this choice determines whether the estimand captures overall clinical benefit or the effect in an idealised scenario without additional interventions. Pre-specifying which intercurrent-event strategy applies to each type of event ensures interpretability and alignment between the trial’s objective and its statistical analysis.  
+
+Kahan et al. (2024) classify intercurrent events as either *treatment-modifying* (e.g., discontinuation, switching) or *truncating*, where the event precludes the outcome from being observed—death in a quality-of-life trial being a canonical example. In T2E analyses, these truncating events correspond to *competing risks* that must be explicitly addressed in the estimand definition rather than treated as simple censoring.
+
+---
+
+### Treatment Switching and Cross-Over (Overall Survival)
+*Example adapted from Manitz et al., 2021 [@manitz2022estimands].*
+
+Among intercurrent events in survival trials, treatment switching is the one most likely to alter the contrast that OS appears to estimate, because it changes post-randomisation therapy pathways in ways that depend on prognosis and treatment response.  
+
+Consider a randomised oncology trial comparing an experimental drug A with standard therapy B for overall survival. Mid-trial, patients assigned to B may cross over to A after progression.  
+
+- A **treatment-policy estimand** asks: *What is the effect of being randomised to A versus B, regardless of switching?* This reflects an intent-to-treat (ITT) principle and aligns with real-world clinical practice when cross-over would occur post-approval.  
+- A **hypothetical estimand** asks: *What would overall survival have been if no switching occurred?* This isolates the pure biologic effect of A but requires assumptions about unobserved survival times.  
+
+To estimate the hypothetical effect, analysts can use rank-preserving structural failure-time models (RPSFT), inverse-probability-of-censoring weighting (IPCW), or two-stage models. These approaches correct for dependent censoring induced by switching, whereas naïvely censoring at the switch point biases the result. Manitz et al. emphasise the importance of specifying both the estimand and estimation method prospectively in the SAP [@manitz2022estimands].  
+
+Whereas switching primarily complicates OS by modifying post-progression care, PFS raises a different question: how to treat deaths that occur before progression when defining the variable itself.
+
+---
+
+### Composite and Hypothetical Strategies (Progression-Free Survival)
+*Example based on Siegel et al., 2024 [@siegel2024time] and FDA oncology guidance.*
+
+PFS illustrates how the estimand is determined by whether death prior to documented progression is considered part of the outcome or a competing truncating event.  
+
+In a metastatic-cancer study, progression-free survival (PFS) is defined as time from randomisation to disease progression or death. Two clinical questions may arise:
+
+- Under a **composite strategy**, both progression and death are treated as events. This estimand reflects the patient-centric question “How long until disease progression or death?” and is usually estimated by Kaplan–Meier or Cox models.  
+- Under a **hypothetical strategy**, one may ask what progression would have been *if death had not occurred prior to progression*. Patients dying before progression are censored at death. The validity of this approach rests on the assumption of independent censoring; if mortality risk relates to treatment, this assumption is violated [@siegel2024time].  
+
+These two strategies answer distinct questions. The composite estimand describes *real-world benefit*; the hypothetical estimand isolates a biological effect uncontaminated by early mortality. Explicitly stating which is targeted prevents misinterpretation of PFS curves.
+
+---
+
+### While-on-Treatment and While-Alive Strategies
+*Concept adapted from Mallinckrodt et al., 2019 [@mallinckrodt2019estimands].*
+
+Beyond composite and hypothetical choices for defining the variable, some questions focus explicitly on the period during which patients are alive and receiving therapy.  
+
+A related approach described in the handbook is the **while-on-treatment** (or **while-alive**) strategy. Here, the variable is defined and measured only up to the time of treatment discontinuation or death. This strategy targets the treatment effect *while patients are receiving therapy* and is relevant for symptomatic or patient-reported outcomes analysed alongside survival endpoints.  
+
+In survival contexts, a while-alive strategy can describe the probability of being both alive and on treatment over time, often estimated through *state-occupancy* or *multi-state models*. Although not always a primary estimand, this approach is valuable for capturing short-term treatment effects and for describing the duration of benefit before treatment discontinuation or death.
+
+---
+
+### Principal-Stratum Strategy (AIDS-Free Survival)
+*Example adapted from Mallinckrodt et al., 2019 [@mallinckrodt2019estimands].*
+
+In the ACTG 175 HIV trial, investigators studied *time to first AIDS event or death*. Because some participants could initiate rescue therapy after a $\geq 50\%$ decline in CD4 count—thereby changing subsequent care and risk—defining an estimand required clarifying whose outcomes were being compared.  
+
+Within this principal stratum, the variable of interest was the time to the first AIDS event or death. Treatment discontinuation was handled using a **treatment-policy strategy**, meaning that follow-up continued regardless of whether a participant stopped the assigned therapy. In contrast, the initiation of rescue therapy, defined as a $\geq 50\%$ decline in CD4 count, was handled using a **principal-stratum strategy**, because the estimand was defined among the subset of patients who, under either treatment, would not have required rescue therapy. The treatment effect was summarised using the hazard ratio for time to AIDS or death between treatment arms.  
+
+To evaluate robustness to censoring and model assumptions, the authors performed sensitivity analyses that modified assumptions about the timing of unobserved events for censored participants. These analyses introduced delta $(\delta)$ sensitivity parameters, which shift the assumed event times for censored individuals; negative values implying earlier events and positive values implying later events relative to the primary model. By varying $\delta$ for each treatment group ($\delta_{0}$ and $\delta_{1}$), investigators could examine how different plausible departures from the “missing-at-random” assumption would influence the estimated hazard ratio. This approach illustrates how principal-stratum reasoning can be combined with standard survival methods to handle biological intercurrent events while transparently assessing the robustness of conclusions [@mallinckrodt2019estimands].
+
+---
+
+## Censoring and Estimation
+Censoring occurs when a patient’s event time is only partially observed. According to ICH E9(R1) [@ICH_E9R1_2019], censoring relates to the *estimator*, not the estimand [@siegel2024time].  
+
+- **Independent censoring:** those censored have the same risk beyond censoring as those still under observation.  
+- **Dependent censoring:** those censored differ systematically (e.g., withdrawal due to toxicity).  
+- **Conditionally independent censoring:** independence holds after adjusting for measured covariates [@mozumder2025time].  
+
+### Example – Dependent Censoring from Subsequent Therapy
+In a lung-cancer trial, patients doing well may seek additional off-protocol therapy earlier than others. Because better-prognosis patients are preferentially censored, the “censor-at-therapy” rule introduces dependent censoring. The standard Cox model then no longer targets the intended estimand. Causal estimators such as RPSFT or IPCW that model the switching mechanism provide unbiased estimation under weaker assumptions [@manitz2022estimands].  
+
+### Example – Independent Administrative Censoring
+At study closure, some patients remain alive and event-free. Censoring them at database lock is administrative and usually independent, posing no bias under either composite or treatment-policy estimands.  
+
+Once the estimator has been chosen to match the estimand and its plausible censoring assumptions, a transparent plan for robustness checks is still needed.  
+
+Beyond specific methods, Mallinckrodt et al. (2019) [@mallinckrodt2019estimands] present a *hierarchy of sensitivity analyses* applicable across all estimands, including time-to-event endpoints. These range from *assumption-preserving* (varying parameters within the same model) to *assumption-relaxing* (modifying censoring or intercurrent-event assumptions) and *assumption-breaking* analyses (introducing entirely hypothetical counterfactual scenarios). For survival data, such sensitivity analyses may involve varying censoring assumptions, modelling competing risks, or shifting event times through $\delta$-parameters. Structuring sensitivity analyses in this way clarifies which assumptions most influence inference and identifies which conclusions remain robust [@mallinckrodt2019estimands].  
+
+Practical guidance from Siegel et al. (2024) [@siegel2024time] and Mozumder et al. (2025) [@mozumder2025time] recommends:  
+
+1. Define the estimand first.  
+2. Select an estimator consistent with realistic censoring assumptions.  
+3. Document reasons for follow-up loss and record covariates predictive of both censoring and outcome.  
+4. Perform sensitivity analyses varying those assumptions.
+
+---
+
+## Choice of Summary Measure
+The summary measure is part of the estimand and should make the clinical meaning of the treatment effect transparent.  
+
+The *hazard ratio* from a Cox model is widely used but relies on proportional-hazards and independent-censoring assumptions. It can also obscure absolute treatment differences [@rufibach2019treatment].  
+
+Composite endpoints are another strategy emphasised in the handbook for T2E outcomes where multiple event types, such as hospitalisation and death, reflect a unified notion of treatment benefit. When using a composite strategy, investigators must ensure that all included events have similar clinical meaning and directionality of effect. In many oncology and cardiovascular trials, death dominates the composite, making interpretability dependent on whether earlier occurrence of any component consistently indicates worse outcomes. The selected summary measure, whether a hazard ratio or a difference in cumulative incidence, should therefore align with the composite’s clinical interpretation [@mallinckrodt2019estimands].  
+
+When composite definitions or hazard-based summaries obscure absolute differences over clinically relevant horizons, alternative time-anchored summaries are preferable.  
+
+When proportional-hazards assumptions fail, alternatives provide clearer interpretations:  
+
+- **Restricted Mean Survival Time (RMST):** the average survival time up to a pre-specified $\tau$; difference in RMST directly answers “How many extra months on average does the new treatment provide within $\tau$ months?”  
+- **Survival probability difference** or **ratio** at a fixed time.  
+- **Median or quantile survival difference.**
+
+Choice of summary should align with the trial’s objective: e.g., for early-benefit drugs with delayed toxicity, RMST over 24 months may be more informative than a single HR.
+
+---
+
+## Illustrative Case Examples
+The three examples above anchor the abstract strategy choices in concrete settings. Table 1 summarises how the intercurrent events, estimand strategies, and compatible estimators align for each scenario.
+
+| **Scenario** | **Intercurrent Event(s)** | **Estimand Strategy** | **Estimator / Method** | **Interpretation of Effect** |
+|:--------------|:---------------------------|:----------------------|:------------------------|:-----------------------------|
+| **Overall Survival with Cross-Over** | Patients switch to the experimental treatment after progression or access similar therapies off-protocol. | *Hypothetical* — estimates what survival would have been if no switching had occurred. | Causal estimators such as Rank-Preserving Structural Failure-Time Models (RPSFT), Inverse Probability of Censoring Weighting (IPCW), or two-stage models. | Quantifies the treatment effect on survival in a setting where cross-over is prevented. |
+| **Progression-Free Survival with Death Before Progression** | Death occurs prior to documented progression. | *Composite* — counts both progression and death as events.<br>*Hypothetical* — censors at death to ask what progression would have been if death had not occurred. | Kaplan–Meier estimator or Cox proportional-hazards model, depending on the chosen strategy. | Composite estimand reflects overall clinical benefit; hypothetical estimand isolates the biological effect of delaying progression. |
+| **AIDS-Free Survival (HIV)** | CD4 cell count falls below 50 % threshold, triggering rescue therapy; some treatment discontinuation. | *Principal-Stratum* for rescue initiation (estimand defined among patients who would not require rescue under either treatment).<br>*Treatment-Policy* for discontinuation. | Stratified Cox model with sensitivity analyses, such as multiple imputation or δ-parameter shifts. | Measures the treatment effect on time to AIDS or death among patients maintaining immune stability, while assessing robustness to censoring assumptions. |
+
+**Table 1.** Summary of illustrative estimands for common time-to-event (T2E) scenarios.
+
+---
+
+## Conclusions
+Embedding time-to-event endpoints within the estimand framework makes explicit the link between trial objectives and statistical analysis. Investigators should:  
+
+- Specify intercurrent-event strategies up front.  
+- Treat censoring as part of estimation, not the estimand.  
+- Select summary measures that best convey the scientific question.  
+
+Such clarity enhances interpretability, comparability, and regulatory confidence in survival-endpoint analyses.  
+
+The broader framework outlined by Mallinckrodt et al. (2019) reinforces that intercurrent-event strategies are not isolated decisions but part of a coherent system linking trial objectives, analysis methods, and sensitivity analyses. When applied to survival endpoints, this structure ensures that treatment effects are both clinically meaningful and statistically defensible.  
+
+As Kahan et al. (2024) [@kahan2024estimands] argue, estimands provide a practical mechanism for aligning study objectives, data collection, and analysis plans. In survival trials, this alignment clarifies whether interest lies in real-world treatment policy effects or idealised biological effects, and ensures that censoring rules, competing-risk handling, and sensitivity analyses are coherent with that intent.
 
 # References
